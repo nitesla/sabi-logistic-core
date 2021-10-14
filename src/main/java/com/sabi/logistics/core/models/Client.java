@@ -10,8 +10,6 @@ import javax.persistence.Entity;
 @Data
 @Entity
 public class Client extends CoreEntity {
-
-
     private Long userId;
 
 
