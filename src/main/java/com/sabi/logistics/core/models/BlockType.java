@@ -11,11 +11,10 @@ import javax.persistence.Entity;
 @Entity
 public class BlockType extends CoreEntity {
 
-    private Long id;
+
     private String name;
-    private double lengths;
+    private double length;
     private double width;
     private double height;
-    private boolean isActive;
     private double price;
 }

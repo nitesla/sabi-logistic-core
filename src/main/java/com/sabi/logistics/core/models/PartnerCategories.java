@@ -11,9 +11,7 @@ import javax.persistence.Entity;
 @Entity
 public class PartnerCategories extends CoreEntity{
 
-    private Long id;
     private Long partnerId;
-    private boolean isActive;
     private Long categoryId;
 
 }

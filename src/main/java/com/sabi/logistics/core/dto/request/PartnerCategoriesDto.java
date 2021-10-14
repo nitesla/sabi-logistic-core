@@ -8,4 +8,5 @@ public class PartnerCategoriesDto {
     private Long id;
     private Long partnerId;
     private Long categoryId;
+    private boolean isActive;
 }

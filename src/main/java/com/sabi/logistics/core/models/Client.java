@@ -11,8 +11,8 @@ import javax.persistence.Entity;
 @Entity
 public class Client extends CoreEntity {
 
-    private Long id;
+
     private Long userId;
-    private boolean isActive;
+
 
 }

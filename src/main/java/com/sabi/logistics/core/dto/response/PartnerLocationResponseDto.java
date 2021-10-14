@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 public class PartnerLocationResponseDto {
 
     private Long id;
-    private Long privateId;
+    private Long partnerId;
     private Long stateId;
     private int wareHouses;
     private LocalDateTime createdDate;

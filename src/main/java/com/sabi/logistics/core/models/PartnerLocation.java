@@ -11,7 +11,6 @@ import javax.persistence.Entity;
 @Entity
 public class PartnerLocation extends CoreEntity {
 
-    private Long id;
     private Long partnerId;
     private Long stateId;
     private int wareHouses;
