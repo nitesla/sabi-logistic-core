@@ -5,14 +5,17 @@ import com.sabi.framework.models.CoreEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper=false)
 @Data
 @Entity
-public class PartnerProperties extends CoreEntity {
+public class Partner extends CoreEntity {
 
+    @Column(updatable= false)
+    private long userId;
     private String name;
     private Long lgaId;
     private String address;
