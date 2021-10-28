@@ -1,22 +1,17 @@
-package com.sabi.logistics.core.models;
+package com.sabi.logistics.core.dto.request;
 
 
-import com.sabi.framework.models.CoreEntity;
+import com.sabi.logistics.core.models.PartnerAssetType;
+import com.sabi.logistics.core.models.PartnerCategories;
+import com.sabi.logistics.core.models.PartnerLocation;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
 import java.time.LocalDateTime;
+import java.util.List;
 
-
-@EqualsAndHashCode(callSuper=false)
 @Data
-@Entity
-public class Partner extends CoreEntity {
-
-    @Column(updatable= false)
-    private long userId;
+public class CompleteSignupRequest {
+    private Long id;
     private String name;
     private Long lgaId;
     private String address;
@@ -29,7 +24,7 @@ public class Partner extends CoreEntity {
     private LocalDateTime registrationDate = LocalDateTime.now();
     private String registrationToken;
     private String registrationTokenExpiration;
-
-
-
+    private List<PartnerCategories> categories;
+    private List<PartnerAssetType> assets;
+    private List<PartnerLocation> locations;
 }
