@@ -5,15 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
 
-@Builder
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-public class PartnerCategoriesDto {
-
+@Builder
+public class BrandRequestDto {
     private Long id;
-    private Long partnerId;
-    private Long categoryId;
-    private boolean isActive;
+    @NotBlank(message = "Name can not be blank")
+    private String name;
 }

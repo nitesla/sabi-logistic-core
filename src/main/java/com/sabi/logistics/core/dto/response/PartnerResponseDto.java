@@ -5,6 +5,7 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
+
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class PartnerResponseDto {

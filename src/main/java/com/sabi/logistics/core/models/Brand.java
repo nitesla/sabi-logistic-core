@@ -5,16 +5,12 @@ import lombok.*;
 
 import javax.persistence.Entity;
 
-
-@Builder
+@Entity
+@EqualsAndHashCode(callSuper = true)
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper=false)
-@Data
-@Entity
-public class PartnerCategories extends CoreEntity{
-
-    private Long partnerId;
-    private Long categoryId;
-
+@Builder
+public class Brand extends CoreEntity {
+    private String name;
 }
