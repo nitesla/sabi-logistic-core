@@ -8,6 +8,7 @@ import lombok.EqualsAndHashCode;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 
 /**
  *
@@ -22,6 +23,10 @@ public class State extends CoreEntity {
 
     @Column(nullable = false)
     private String name;
+    private Long countryId;
+
+    @Transient
+    private String countryName;
 
 
 
