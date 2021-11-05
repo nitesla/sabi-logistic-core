@@ -1,11 +1,15 @@
 package com.sabi.logistics.core.models;
 
 import com.sabi.framework.models.CoreEntity;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
 import javax.persistence.Entity;
 
+
+
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper=false)
 @Data
 @Entity

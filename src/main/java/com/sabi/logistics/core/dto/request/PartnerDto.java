@@ -5,7 +5,7 @@ import lombok.Data;
 
 
 @Data
-public class PartnerPropertiesDto {
+public class PartnerDto {
 
     private Long id;
     private String name;

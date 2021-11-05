@@ -5,14 +5,16 @@ import lombok.*;
 
 import javax.persistence.Entity;
 
-@EqualsAndHashCode(callSuper = true)
-@Data
+
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+@EqualsAndHashCode(callSuper=false)
+@Data
 @Entity
 public class PartnerAssetType extends CoreEntity {
-    private long partnerId;
-    private long assetTypeId;
+
+    private Long partnerId;
+    private Long assetTypeId;
     private int total;
 }
