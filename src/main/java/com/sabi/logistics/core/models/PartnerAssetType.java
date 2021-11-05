@@ -17,4 +17,6 @@ public class PartnerAssetType extends CoreEntity {
     private Long partnerId;
     private Long assetTypeId;
     private int total;
+    private String assetTypeName;
+    private String partnerName;
 }
