@@ -15,17 +15,17 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class OrderItemResponseDto {
+public class DeliveryResponseDto {
 
     private Long id;
-    private String referenceNo;
-    private String deliveryStatus;
     private long partnerAssetID;
-    private LocalDateTime dateDelivered;
-    private String name;
-    private int qty;
-    private LocalDateTime expectedDeliveryDate;
-    private int weight;
-    private int height;
-    private int length;
+    private long orderItemID;
+    private String status;
+    private long driverID;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private long driverAssistantID;
+    private LocalDateTime createdDate;
+
+
 }
