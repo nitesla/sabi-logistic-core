@@ -4,6 +4,7 @@ import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 
 
 @Builder
