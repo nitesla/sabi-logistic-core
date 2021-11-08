@@ -28,7 +28,8 @@ public class DeliveryRequestDto {
     @NotBlank(message = "Status can not be blank")
     private String status;
 
-    @NotBlank(message = "Driver ID can not be empty")
+    @NotNull(message = "driverID can not be blank")
+    @Min(message = "driverID can not be less than 1", value = 1)
     private Long driverID;
 
     @NotNull
