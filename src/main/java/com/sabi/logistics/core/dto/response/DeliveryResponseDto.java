@@ -19,9 +19,12 @@ public class DeliveryResponseDto {
 
     private Long id;
     private long partnerAssetID;
+    private String partnerAssetName;
     private long orderItemID;
+    private String orderItemName;
     private String status;
     private long driverID;
+    private String driverName;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
     private long driverAssistantID;

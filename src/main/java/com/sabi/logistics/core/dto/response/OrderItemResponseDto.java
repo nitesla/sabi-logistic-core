@@ -21,6 +21,7 @@ public class OrderItemResponseDto {
     private String referenceNo;
     private String deliveryStatus;
     private long partnerAssetID;
+    private String partnerAssetName;
     private LocalDateTime dateDelivered;
     private String name;
     private int qty;

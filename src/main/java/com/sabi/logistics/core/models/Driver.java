@@ -14,6 +14,8 @@ public class Driver extends CoreEntity {
 
     private String name;
     private Long partnerAssetId;
+    private String partnerAssetName;
     private Long partnerId;
+    private String partnerName;
     private Long userId;
 }

@@ -19,6 +19,7 @@ public class OrderResponseDto {
 
     private Long id;
     private long wareHouseID;
+    private String wareHouseName;
     private String referenceNo;
     private String deliveryStatus;
     private String customerName;

@@ -17,9 +17,12 @@ public class Delivery extends CoreEntity {
 
     @Column(nullable = false)
     private long partnerAssetID;
+    private String partnerAssetName;
     private long orderItemID;
+    private String orderItemName;
     private String status;
     private long driverID;
+    private String driverName;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
     private long driverAssistantID;

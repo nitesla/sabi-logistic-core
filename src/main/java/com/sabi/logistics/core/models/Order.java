@@ -6,6 +6,7 @@ import lombok.*;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
@@ -19,6 +20,8 @@ public class Order extends CoreEntity {
 
     @Column(nullable = false)
     private long wareHouseID;
+    @Transient
+    private String wareHouseName;
     private String referenceNo;
     private String deliveryStatus;
     private String customerName;
