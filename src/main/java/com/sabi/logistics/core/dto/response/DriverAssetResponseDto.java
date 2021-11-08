@@ -12,6 +12,8 @@ public class DriverAssetResponseDto {
     private Long id;
     private String name;
     private Long partnerAssetId;
+    private Long partnerId;
+    private Long partnerAssetTypeId;
     private Long driverId;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;

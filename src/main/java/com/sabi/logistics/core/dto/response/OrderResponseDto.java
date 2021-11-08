@@ -19,7 +19,6 @@ public class OrderResponseDto {
 
     private Long id;
     private long wareHouseID;
-    private long deliveryPartnerID;
     private String referenceNo;
     private String deliveryStatus;
     private String customerName;

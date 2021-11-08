@@ -14,4 +14,6 @@ public class DriverAsset extends CoreEntity {
     private String name;
     private Long partnerAssetId;
     private Long driverId;
+    private Long partnerId;
+    private Long partnerAssetTypeId;
 }

@@ -22,10 +22,6 @@ public class OrderRequestDto {
     @Min(message = "WareHouse Id can not be less than 1", value = 1)
     private Long wareHouseID;
 
-    @NotNull(message = "Delivery Partner Id can not be blank")
-    @Min(message = "Delivery Partner Id can not be less than 1", value = 1)
-    private Long deliveryPartnerID;
-
 //    private String referenceNo;
 
     @NotBlank(message = "Delivery Status can not be blank")

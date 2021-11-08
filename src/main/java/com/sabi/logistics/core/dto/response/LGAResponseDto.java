@@ -23,7 +23,7 @@ public class LGAResponseDto {
 
     private long stateId;
 
-    private String state;
+    private String stateName;
 
     private LocalDateTime createdDate;
 
