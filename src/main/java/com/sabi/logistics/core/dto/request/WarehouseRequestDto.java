@@ -37,4 +37,8 @@ public class WarehouseRequestDto {
     private String latitude;
     @NotBlank(message = "owner can not be blank")
     private String owner;
+    @NotBlank(message = "Name can not be blank")
+    private String name;
+    @NotNull(message = "User Id can not be null")
+    private Long userId;
 }

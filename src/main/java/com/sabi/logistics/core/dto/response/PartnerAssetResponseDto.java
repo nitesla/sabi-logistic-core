@@ -30,6 +30,9 @@ public class PartnerAssetResponseDto {
     private boolean isOwner;
     private String tonnageType;
     private long brandId;
+    private String assetTypeName;
+    private String partnerName;
+    private Long driverAssistantId;
     private LocalDateTime createdDate;
 
     private LocalDateTime updatedDate;

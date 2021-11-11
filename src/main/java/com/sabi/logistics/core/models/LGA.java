@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 
 /**
  *
@@ -30,4 +31,7 @@ public class LGA extends CoreEntity {
         this.name = name;
         this.stateId = stateId;
     }
+    @Transient
+    private String stateName;
+
 }

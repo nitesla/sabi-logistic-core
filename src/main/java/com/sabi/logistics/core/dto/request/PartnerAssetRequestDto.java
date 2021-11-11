@@ -77,4 +77,7 @@ public class PartnerAssetRequestDto {
     @NotNull(message = "brand Id can not be null")
     @Min(value = 1, message = "Brand Id can not be less than 0.0")
     private Long brandId;
+    @NotNull(message = "driver assistant Id can not be null")
+    @Min(value = 1, message = "driver assistant Id can not be less than 0.0")
+    private Long driverAssistantId;
 }

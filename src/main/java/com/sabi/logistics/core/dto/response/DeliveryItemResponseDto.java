@@ -10,28 +10,16 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class LGAResponseDto {
-
+public class DeliveryItemResponseDto {
 
     private Long id;
-    private String name;
-
-    private long stateId;
-
-    private String stateName;
-
-    private LocalDateTime createdDate;
-
-    private LocalDateTime updatedDate;
-
-    private Long createdBy;
-
-    private Long updatedBy;
-
-    private Boolean isActive;
+    private long deliveryID;
+    private long tripRequestID;
+    private String status;
+    private LocalDateTime deliveryDate;
 }

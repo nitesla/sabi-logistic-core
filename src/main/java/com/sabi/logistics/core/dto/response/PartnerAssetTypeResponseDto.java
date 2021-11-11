@@ -22,6 +22,8 @@ public class PartnerAssetTypeResponseDto {
     private long partnerId;
     private long assetTypeId;
     private int total;
+    private String assetTypeName;
+    private String partnerName;
     private boolean isActive;
     private LocalDateTime createdDate;
 
