@@ -24,9 +24,11 @@ public class OrderItemRequestDto {
     @NotBlank(message = "Delivery Status can not be blank")
     private String deliveryStatus;
 
-    @NotNull(message = "Partner Asset Id can not be blank")
-    @Min(message = "Partner Asset Id can not be less than 1", value = 1)
-    private Long partnerAssetID;
+    @NotNull(message = "orderID can not be blank")
+    @Min(message = "orderID can not be less than 1", value = 1)
+    private Long orderID;
+
+    private LocalDateTime dateDelivered;
 
     @NotBlank(message = "Name can not be empty")
     private String name;

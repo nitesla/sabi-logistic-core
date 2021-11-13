@@ -5,6 +5,8 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -16,8 +18,18 @@ public class TripRequest extends CoreEntity {
 
     @Column(nullable = false)
     private long partnerID;
-    private String partnerName;
-    private long orderItemID;
-    private String orderItemName;
+    private String referenceNo;
     private String status;
+    private long partnerAssetID;
+    private String deliveryStatus;
+    private long driverID;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private long driverAssistantID;
+    private String barCode;
+    private String QRCode;
+    @OneToOne
+    private TripItem tripItem;
+    @OneToOne
+    private RequestResponse requestResponse;
 }

@@ -2,6 +2,7 @@ package com.sabi.logistics.core.dto.response;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.sabi.logistics.core.models.OrderItem;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,7 +19,7 @@ import java.time.LocalDateTime;
 public class OrderResponseDto {
 
     private Long id;
-    private long wareHouseID;
+    private Long wareHouseID;
     private String wareHouseName;
     private String referenceNo;
     private String deliveryStatus;
@@ -32,6 +33,7 @@ public class OrderResponseDto {
     private double totalAmount;
     private int totalQuantity;
     private LocalDateTime createdDate;
+    private OrderItem orderItem;
 
 
 }
