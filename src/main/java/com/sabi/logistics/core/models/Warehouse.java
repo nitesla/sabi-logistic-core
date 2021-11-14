@@ -20,6 +20,8 @@ public class Warehouse extends CoreEntity {
     private String contactPhone;
     private String contactEmail;
     private String longitude;
+    private String name;
+    private long userId;
     private String latitude;
     private String owner;
 }

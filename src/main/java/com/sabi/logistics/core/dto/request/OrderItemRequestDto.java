@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -24,7 +25,7 @@ public class OrderItemRequestDto {
     private String deliveryStatus;
 
     @NotNull(message = "Partner Asset Id can not be blank")
-    @Min(message = "Partner Asset Id can not be less than 0", value = 1)
+    @Min(message = "Partner Asset Id can not be less than 1", value = 1)
     private Long partnerAssetID;
 
     @NotBlank(message = "Name can not be empty")
@@ -33,4 +34,19 @@ public class OrderItemRequestDto {
     @NotNull(message = "Qty can not be empty")
     @Min(message = "Qty can not be less than 0", value = 1)
     private Integer qty;
+
+    @NotNull
+    private LocalDateTime expectedDeliveryDate;
+
+    @NotNull(message = "Weight can not be empty")
+    @Min(message = "Weight can not be less than 0", value = 1)
+    private Integer weight;
+
+    @NotNull(message = "Height can not be empty")
+    @Min(message = "Height can not be less than 0", value = 1)
+    private Integer height;
+
+    @NotNull(message = "Length can not be empty")
+    @Min(message = "Length can not be less than 0", value = 1)
+    private Integer length;
 }
