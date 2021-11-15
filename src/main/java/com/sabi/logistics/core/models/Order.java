@@ -5,7 +5,6 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
 
@@ -31,7 +30,5 @@ public class Order extends CoreEntity {
     private String QRcode;
     private double totalAmount;
     private int totalQuantity;
-    @OneToOne
-    private OrderItem orderItem;
 
 }

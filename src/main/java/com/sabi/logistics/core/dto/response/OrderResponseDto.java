@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 @Builder
@@ -33,7 +34,7 @@ public class OrderResponseDto {
     private double totalAmount;
     private int totalQuantity;
     private LocalDateTime createdDate;
-    private OrderItem orderItem;
+    private List<OrderItem> orderItem;
 
 
 }

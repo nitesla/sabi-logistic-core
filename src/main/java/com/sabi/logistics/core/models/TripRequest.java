@@ -5,7 +5,6 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.OneToOne;
 import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
@@ -28,8 +27,4 @@ public class TripRequest extends CoreEntity {
     private long driverAssistantID;
     private String barCode;
     private String QRCode;
-    @OneToOne
-    private TripItem tripItem;
-    @OneToOne
-    private RequestResponse requestResponse;
 }

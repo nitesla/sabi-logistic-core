@@ -10,6 +10,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 @Builder
@@ -34,8 +35,8 @@ public class TripResponseDto {
     private Long driverAssistantID;
     private String barCode;
     private String QRCode;
-    private TripItem tripItem;
-    private RequestResponse requestResponse;
+    private List<TripItem> tripItem;
+    private List <RequestResponse> requestResponse;
 
 
 }
