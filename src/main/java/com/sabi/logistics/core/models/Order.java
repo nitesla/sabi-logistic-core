@@ -27,7 +27,7 @@ public class Order extends CoreEntity {
     private LocalDateTime dateDelivered;
     private LocalDateTime expectedDeliveryDate;
     private String barCode;
-    private String QRcode;
+    private String QRCode;
     private double totalAmount;
     private int totalQuantity;
 

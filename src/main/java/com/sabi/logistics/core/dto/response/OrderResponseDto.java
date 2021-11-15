@@ -30,7 +30,7 @@ public class OrderResponseDto {
     private LocalDateTime dateDelivered;
     private LocalDateTime expectedDeliveryDate;
     private String barCode;
-    private String QRcode;
+    private String QRCode;
     private double totalAmount;
     private int totalQuantity;
     private LocalDateTime createdDate;
