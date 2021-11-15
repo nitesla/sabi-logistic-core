@@ -1,5 +1,7 @@
 package com.sabi.logistics.core.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
 import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
@@ -26,5 +28,7 @@ public class TripRequest extends CoreEntity {
     private LocalDateTime endTime;
     private long driverAssistantID;
     private String barCode;
-    private String QRCode;
+    @SerializedName("QRCode")
+    @JsonProperty("QRCode")
+    private String qrCode;
 }

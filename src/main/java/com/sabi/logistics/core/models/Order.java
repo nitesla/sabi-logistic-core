@@ -1,5 +1,7 @@
 package com.sabi.logistics.core.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
 import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
@@ -27,7 +29,9 @@ public class Order extends CoreEntity {
     private LocalDateTime dateDelivered;
     private LocalDateTime expectedDeliveryDate;
     private String barCode;
-    private String QRCode;
+    @SerializedName("QRCode")
+    @JsonProperty("QRCode")
+    private String qrCode;
     private double totalAmount;
     private int totalQuantity;
 

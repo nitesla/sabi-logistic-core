@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 public class PartnerUserRequestDto {
 
     private Long id;
+    private Long roleId;
     private String firstName;
     private String lastName;
     private String middleName;
