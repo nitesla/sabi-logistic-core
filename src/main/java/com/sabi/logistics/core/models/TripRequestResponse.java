@@ -12,7 +12,7 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 @Builder
 @Entity
-public class RequestResponse extends CoreEntity {
+public class TripRequestResponse extends CoreEntity {
 
     @Column(nullable = false)
     private String status;

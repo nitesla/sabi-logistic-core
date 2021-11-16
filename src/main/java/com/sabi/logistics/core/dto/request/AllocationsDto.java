@@ -1,8 +1,10 @@
 package com.sabi.logistics.core.dto.request;
 
+import com.sabi.logistics.core.models.AllocationHistory;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 public class AllocationsDto {
@@ -15,4 +17,5 @@ public class AllocationsDto {
     private Long clientId;
     private LocalDateTime expirationDate;
     private LocalDateTime startDate;
+
 }

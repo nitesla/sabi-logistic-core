@@ -1,6 +1,7 @@
 package com.sabi.logistics.core.models;
 
 
+import com.sabi.framework.models.CoreEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +17,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Builder
 @Entity
-public class PartnerRole {
+public class PartnerRole extends CoreEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

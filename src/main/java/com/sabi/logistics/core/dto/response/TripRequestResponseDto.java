@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class RequestResponseDto {
+public class TripRequestResponseDto {
     private Long id;
     private Long tripRequestID;
     private String status;

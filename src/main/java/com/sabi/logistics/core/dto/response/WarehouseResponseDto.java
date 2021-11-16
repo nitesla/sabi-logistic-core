@@ -13,10 +13,10 @@ import java.time.LocalDateTime;
 @Builder
 public class WarehouseResponseDto {
 
-    private long id;
-    private boolean isActive;
-    private long partnerId;
-    private long lgaId;
+    private Long id;
+    private Boolean isActive;
+    private Long partnerId;
+    private Long lgaId;
     private String address;
     private String contactPerson;
     private String contactPhone;
@@ -25,7 +25,7 @@ public class WarehouseResponseDto {
     private String latitude;
     private String owner;
     private String name;
-    private long userId;
+    private Long userId;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
     private Long createdBy;

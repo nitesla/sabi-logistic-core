@@ -21,6 +21,7 @@ public class PartnerLocationResponseDto {
     private int wareHouses;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
+    private Boolean isActive;
     private Long createdBy;
     private Long updatedBy;
 }
