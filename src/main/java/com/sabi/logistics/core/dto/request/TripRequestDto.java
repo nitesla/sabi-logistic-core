@@ -1,7 +1,7 @@
 package com.sabi.logistics.core.dto.request;
 
-import com.sabi.logistics.core.models.RequestResponse;
 import com.sabi.logistics.core.models.TripItem;
+import com.sabi.logistics.core.models.TripRequestResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -36,6 +36,6 @@ public class TripRequestDto {
     private LocalDateTime endTime;
     private Long driverAssistantID;
     private TripItem tripItem;
-    private RequestResponse requestResponse;
+    private TripRequestResponse tripRequestResponse;
 
 }
