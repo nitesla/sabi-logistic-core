@@ -18,10 +18,8 @@ import java.time.LocalDateTime;
 public class OrderItemResponseDto {
 
     private Long id;
-    private String referenceNo;
     private String deliveryStatus;
-    private long partnerAssetID;
-    private String partnerAssetName;
+    private long orderID;
     private LocalDateTime dateDelivered;
     private String name;
     private int qty;

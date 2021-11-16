@@ -2,12 +2,16 @@ package com.sabi.logistics.core.dto.response;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
+import com.sabi.logistics.core.models.OrderItem;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 @Builder
@@ -18,7 +22,7 @@ import java.time.LocalDateTime;
 public class OrderResponseDto {
 
     private Long id;
-    private long wareHouseID;
+    private Long wareHouseID;
     private String wareHouseName;
     private String referenceNo;
     private String deliveryStatus;
@@ -28,10 +32,13 @@ public class OrderResponseDto {
     private LocalDateTime dateDelivered;
     private LocalDateTime expectedDeliveryDate;
     private String barCode;
-    private String QRcode;
+    @SerializedName("QRCode")
+    @JsonProperty("QRCode")
+    private String qrCode;
     private double totalAmount;
     private int totalQuantity;
     private LocalDateTime createdDate;
+    private List<OrderItem> orderItem;
 
 
 }

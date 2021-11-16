@@ -9,15 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class PartnerUserRequestDto {
-
+public class RequestResponseRequestDto {
     private Long id;
-    private Long roleId;
-    private String firstName;
-    private String lastName;
-    private String middleName;
-    private String email;
-    private String phone;
-
-
+    private Long tripRequestID;
+    private String status;
+    private Long partnerID;
 }

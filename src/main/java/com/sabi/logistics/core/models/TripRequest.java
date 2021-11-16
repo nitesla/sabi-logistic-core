@@ -1,10 +1,13 @@
 package com.sabi.logistics.core.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
 import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -16,8 +19,16 @@ public class TripRequest extends CoreEntity {
 
     @Column(nullable = false)
     private long partnerID;
-    private String partnerName;
-    private long orderItemID;
-    private String orderItemName;
+    private String referenceNo;
     private String status;
+    private long partnerAssetID;
+    private String deliveryStatus;
+    private long driverID;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private long driverAssistantID;
+    private String barCode;
+    @SerializedName("QRCode")
+    @JsonProperty("QRCode")
+    private String qrCode;
 }
