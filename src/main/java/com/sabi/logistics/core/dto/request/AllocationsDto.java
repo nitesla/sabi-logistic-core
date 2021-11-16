@@ -17,5 +17,5 @@ public class AllocationsDto {
     private Long clientId;
     private LocalDateTime expirationDate;
     private LocalDateTime startDate;
-    private List<AllocationHistory> historys;
+
 }
