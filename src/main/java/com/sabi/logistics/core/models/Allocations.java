@@ -19,4 +19,6 @@ public class Allocations extends CoreEntity {
     private Long clientId;
     private LocalDateTime expirationDate;
     private LocalDateTime startDate;
+
+
 }
