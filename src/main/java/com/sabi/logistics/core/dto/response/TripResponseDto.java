@@ -42,5 +42,11 @@ public class TripResponseDto {
     private List<TripItem> tripItem;
     private List <TripRequestResponse> tripRequestResponse;
 
+    private Integer weight;
+    private LocalDateTime deliveryDate;
+    private LocalDateTime dateDelivered;
+    private Long wareHouseId;
+    private String wareHouseAddress;
+
 
 }

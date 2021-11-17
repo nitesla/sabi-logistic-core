@@ -20,5 +20,6 @@ public class TripItem extends CoreEntity {
     private LocalDateTime deliveryDate;
     private long orderItemID;
     private long tripRequestID;
+    private String deliveryAddress;
 
 }

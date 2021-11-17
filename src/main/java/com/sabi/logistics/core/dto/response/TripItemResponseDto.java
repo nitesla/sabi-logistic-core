@@ -20,4 +20,6 @@ public class TripItemResponseDto{
     private LocalDateTime deliveryDate;
     private Long orderItemID;
     private String orderItemName;
+    private String deliveryAddress;
+
 }
