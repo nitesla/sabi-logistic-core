@@ -15,6 +15,8 @@ public class Warehouse extends CoreEntity {
 
     private long partnerId;
     private long lgaId;
+    private String lgaName;
+    private String stateName;
     private String address;
     private String contactPerson;
     private String contactPhone;
