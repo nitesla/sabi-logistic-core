@@ -25,6 +25,8 @@ public class WarehouseResponseDto {
     private String latitude;
     private String owner;
     private String name;
+    private String lgaName;
+    private String stateName;
     private Long userId;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
