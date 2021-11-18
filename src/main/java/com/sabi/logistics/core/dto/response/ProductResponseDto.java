@@ -1,25 +1,29 @@
 package com.sabi.logistics.core.dto.response;
 
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
 
-@Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class TripItemResponseDto{
-    private Long id;
-    private Long tripRequestID;
-    private String status;
-    private LocalDateTime deliveryDate;
-    private Long orderItemID;
-    private String orderItemName;
-    private String deliveryAddress;
+public class ProductResponseDto {
 
+    private Long id;
+
+    private Long thirdPartyId;
+
+    private String name;
+
+    private Double totalStock;
+
+    private Double stockSold;
+
+    private Double stockLeft;
 }

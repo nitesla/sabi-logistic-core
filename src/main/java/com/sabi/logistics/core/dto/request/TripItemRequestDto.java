@@ -18,4 +18,5 @@ public class TripItemRequestDto {
     private String status;
     private LocalDateTime deliveryDate;
     private Long orderItemID;
+//    private String deliveryAddress;
 }

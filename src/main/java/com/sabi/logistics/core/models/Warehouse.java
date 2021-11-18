@@ -26,4 +26,6 @@ public class Warehouse extends CoreEntity {
     private long userId;
     private String latitude;
     private String owner;
+    private double totalStock;
+    private double stockSold;
 }

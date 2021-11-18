@@ -31,4 +31,10 @@ public class TripRequest extends CoreEntity {
     @SerializedName("QRCode")
     @JsonProperty("QRCode")
     private String qrCode;
+
+    private int weight;
+    private LocalDateTime deliveryDate;
+    private LocalDateTime dateDelivered;
+    private long wareHouseId;
+    private String wareHouseAddress;
 }

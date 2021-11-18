@@ -32,4 +32,7 @@ public class WarehouseResponseDto {
     private LocalDateTime updatedDate;
     private Long createdBy;
     private Long updatedBy;
+    private Double totalStock;
+    private Double stockSold;
+    private Double stockLeft;
 }

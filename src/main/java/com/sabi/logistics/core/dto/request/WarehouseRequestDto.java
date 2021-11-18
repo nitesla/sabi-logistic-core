@@ -41,4 +41,6 @@ public class WarehouseRequestDto {
     private String name;
     @NotNull(message = "User Id can not be null")
     private Long userId;
+    private Double totalStock;
+    private Double stockSold;
 }

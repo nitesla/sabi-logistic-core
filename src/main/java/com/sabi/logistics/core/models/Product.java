@@ -5,7 +5,8 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import java.time.LocalDateTime;
+
+;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -13,13 +14,13 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 @Entity
-public class TripItem extends CoreEntity {
+
+public class Product extends CoreEntity {
 
     @Column(nullable = false)
-    private String status;
-    private LocalDateTime deliveryDate;
-    private long orderItemID;
-    private long tripRequestID;
-    private String deliveryAddress;
+    private long thirdPartyId;
+    private String name;
+    private double totalStock;
+    private double stockSold;
 
 }
