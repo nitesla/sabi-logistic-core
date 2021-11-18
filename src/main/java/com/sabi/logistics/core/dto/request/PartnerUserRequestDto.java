@@ -21,4 +21,5 @@ public class PartnerUserRequestDto {
     private String userType;
 
 
+
 }
