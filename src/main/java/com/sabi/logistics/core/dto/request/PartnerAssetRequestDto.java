@@ -65,7 +65,7 @@ public class PartnerAssetRequestDto {
     private Double weight;
     @NotNull(message = "volume can not be empty")
     @Min(value = 1, message = "Color Id can not be less than 0.0")
-    private long colorId;
+    private Long colorId;
     @NotNull(message = "hasCover can not be empty")
 //    @Pattern(regexp = "^true$|^false$", message = "allowed input: true or false")
     private Boolean hasCover;
@@ -80,4 +80,5 @@ public class PartnerAssetRequestDto {
     @NotNull(message = "driver assistant Id can not be null")
     @Min(value = 1, message = "driver assistant Id can not be less than 0.0")
     private Long driverAssistantId;
+    private String driverAssistantName;
 }

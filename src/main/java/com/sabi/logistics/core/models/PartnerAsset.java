@@ -22,7 +22,6 @@ public class PartnerAsset extends CoreEntity {
     private double volume;
     private String contactPerson;
     private String status;
-//    private boolean isActive;
     private double weight;
     private long colorId;
     private boolean hasCover;
@@ -32,4 +31,5 @@ public class PartnerAsset extends CoreEntity {
     private String assetTypeName;
     private String partnerName;
     private Long driverAssistantId;
+    private String driverAssistantname;
 }
