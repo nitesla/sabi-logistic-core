@@ -38,6 +38,8 @@ public class PartnerUser extends CoreEntity {
     @Transient
     private Long roleId;
     @Transient
+    private String roleName;
+    @Transient
     private LocalDateTime passwordChangedOn;
     @Transient
     private String email;
