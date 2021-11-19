@@ -37,7 +37,7 @@ public class OrderItemRequestDto {
     @Min(message = "Qty can not be less than 0", value = 1)
     private Integer qty;
 
-    @NotNull
+
     private LocalDateTime expectedDeliveryDate;
 
     @NotNull(message = "Weight can not be empty")

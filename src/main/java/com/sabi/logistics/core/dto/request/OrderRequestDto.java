@@ -41,7 +41,6 @@ public class OrderRequestDto {
 
     private LocalDateTime dateDelivered;
 
-    @NotNull
     private LocalDateTime expectedDeliveryDate;
 
 //    @NotBlank(message = "BarCode can not be blank")

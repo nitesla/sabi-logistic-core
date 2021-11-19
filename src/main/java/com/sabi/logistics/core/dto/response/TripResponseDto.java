@@ -47,7 +47,7 @@ public class TripResponseDto {
     private LocalDateTime dateDelivered;
     private Long wareHouseId;
     private String wareHouseAddress;
-    private Integer pickUp;
+    private Integer dropOff;
 
 
 }

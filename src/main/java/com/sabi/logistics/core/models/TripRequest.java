@@ -37,4 +37,5 @@ public class TripRequest extends CoreEntity {
     private LocalDateTime dateDelivered;
     private long wareHouseId;
     private String wareHouseAddress;
+    private Integer dropOff;
 }
