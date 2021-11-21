@@ -21,5 +21,8 @@ public class TripItemResponseDto{
     private Long orderItemID;
     private String orderItemName;
     private String deliveryAddress;
+    private int qty;
+    private String customerName;
+    private String customerPhone;
 
 }

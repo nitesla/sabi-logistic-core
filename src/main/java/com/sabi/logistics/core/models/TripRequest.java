@@ -7,6 +7,7 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
@@ -38,4 +39,10 @@ public class TripRequest extends CoreEntity {
     private long wareHouseId;
     private String wareHouseAddress;
     private Integer dropOff;
+    @Transient
+    private String partnerName;
+    @Transient
+    private String partnerAssetName;
+    @Transient
+    private String driverName;
 }
