@@ -70,7 +70,6 @@ public class PartnerAssetRequestDto {
 //    @Pattern(regexp = "^true$|^false$", message = "allowed input: true or false")
     private Boolean hasCover;
     @NotNull(message = "isOwner can not be empty")
-//    @Pattern(regexp = "^true$|^false$", message = "allowed input: true or false")
     private Boolean isOwner;
     @NotBlank(message = "Tonnage type can not be null")
     private String tonnageType;

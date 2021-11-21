@@ -31,5 +31,5 @@ public class PartnerAsset extends CoreEntity {
     private String assetTypeName;
     private String partnerName;
     private Long driverAssistantId;
-    private String driverAssistantname;
+    private String driverAssistantName;
 }
