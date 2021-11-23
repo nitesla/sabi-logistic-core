@@ -38,5 +38,6 @@ public class PartnerAsset extends CoreEntity {
     private String assetTypeName;
     private String partnerName;
     private Long driverAssistantId;
+    @Transient
     private String driverAssistantName;
 }
