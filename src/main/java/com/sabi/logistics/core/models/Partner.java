@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 import java.time.LocalDateTime;
 
 
@@ -30,6 +31,8 @@ public class Partner extends CoreEntity {
     private String registrationToken;
     private String registrationTokenExpiration;
 
+    @Transient
+    private String lga;
 
 
 }
