@@ -45,4 +45,6 @@ public class TripRequest extends CoreEntity {
     private String partnerAssetName;
     @Transient
     private String driverName;
+    @Transient
+    private String driverAssistantName;
 }

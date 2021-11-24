@@ -35,6 +35,7 @@ public class TripResponseDto {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
     private Long driverAssistantID;
+    private String driverAssistantName;
     private String barCode;
     @SerializedName("QRCode")
     @JsonProperty("QRCode")
