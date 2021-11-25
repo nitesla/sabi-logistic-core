@@ -19,6 +19,7 @@ public class PartnerAssetResponseDto {
     private Long partnerAssetTypeId;
     private Long driverId;
     private String driverName;
+    private Long driverUserId;
     private String plateNo;
     private Double length;
     private Double width;
@@ -39,6 +40,7 @@ public class PartnerAssetResponseDto {
     private String partnerName;
     private Long driverAssistantId;
     private String driverAssistantName;
+    private Long driverAssistantUserId;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
     private Long createdBy;
