@@ -13,4 +13,6 @@ public class PartnerBankDto {
     private Long bankId;
 
     private String accountNumber;
+
+    private Boolean isDefault;
 }
