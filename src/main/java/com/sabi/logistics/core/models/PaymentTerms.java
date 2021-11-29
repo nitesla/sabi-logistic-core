@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 
 @EqualsAndHashCode(callSuper=false)
 @Data
@@ -14,4 +15,6 @@ public class PaymentTerms extends CoreEntity {
 
     private Long partnerAssetTypeId;
     private Integer days;
+    @Transient
+    private String partnerAssetTypeName;
 }

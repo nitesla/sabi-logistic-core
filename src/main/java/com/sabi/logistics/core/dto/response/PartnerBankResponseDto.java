@@ -37,4 +37,7 @@ public class PartnerBankResponseDto {
     private Long updatedBy;
 
     private Boolean isActive;
+
+
+    private Boolean isDefault;
 }
