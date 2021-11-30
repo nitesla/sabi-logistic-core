@@ -39,8 +39,8 @@ public class PartnerAssetRequestDto {
     @Min(value = 1, message = "Partner Asset Type Id can not be less than zero")
     private Long partnerAssetTypeId;
 //    @NotNull(message = "Driver id can not be null")
-    @Min(value = 1, message = "Driver Id can not be less than zero")
-    private Long driverId;
+//    @Min(value = 1, message = "Driver Id can not be less than zero")
+//    private Long driverId;
     @NotBlank(message = "Plate number can not be empty")
     private String plateNo;
 //    @NotNull(message = "length can not be empty")
@@ -76,7 +76,9 @@ public class PartnerAssetRequestDto {
     @Min(value = 1, message = "Brand Id can not be less than 0.0")
     private Long brandId;
 //    @NotNull(message = "driver assistant Id can not be null")
-    @Min(value = 1, message = "driver assistant Id can not be less than 0.0")
-    private Long driverAssistantId;
+//    @Min(value = 1, message = "driver assistant Id can not be less than 0.0")
+//    private Long driverAssistantId;
     private String driverAssistantName;
+    private Long driverAssistantUserId;
+    private Long driverUserId;
 }

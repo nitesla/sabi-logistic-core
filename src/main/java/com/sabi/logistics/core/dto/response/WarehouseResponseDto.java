@@ -26,8 +26,10 @@ public class WarehouseResponseDto {
     private String owner;
     private String name;
     private String lgaName;
+    private Long stateId;
     private String stateName;
     private Long userId;
+    private String wareHouseManager;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
     private Long createdBy;
