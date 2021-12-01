@@ -23,7 +23,7 @@ public class ExternalPartnerSignUp {
     private List<PartnerAssetType> assets;
     private List<PartnerLocation> locations;
 
-//    private String deliveryType;
+
 
 
 
