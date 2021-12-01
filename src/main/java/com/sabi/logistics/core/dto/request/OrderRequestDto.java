@@ -19,10 +19,6 @@ import java.time.LocalDateTime;
 public class OrderRequestDto {
     private Long id;
 
-    @NotNull(message = "WareHouse Id can not be blank")
-    @Min(message = "WareHouse Id can not be less than 1", value = 1)
-    private Long wareHouseID;
-
 //    @NotNull(message = "Reference No can not be blank")
 //    @Min(message = "Reference No can not be less than 0", value = 1)
 //    private String referenceNo;

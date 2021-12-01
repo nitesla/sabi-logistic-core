@@ -51,4 +51,8 @@ public class OrderItemRequestDto {
     @NotNull(message = "Length can not be empty")
     @Min(message = "Length can not be less than 0", value = 1)
     private Integer length;
+
+    @NotNull(message = "WareHouse Id can not be blank")
+    @Min(message = "WareHouse Id can not be less than 1", value = 1)
+    private Long wareHouseID;
 }
