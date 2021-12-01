@@ -27,4 +27,6 @@ public class OrderItemResponseDto {
     private int weight;
     private int height;
     private int length;
+    private Long wareHouseID;
+    private String wareHouseName;
 }

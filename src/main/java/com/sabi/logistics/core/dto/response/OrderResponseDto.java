@@ -22,8 +22,6 @@ import java.util.List;
 public class OrderResponseDto {
 
     private Long id;
-    private Long wareHouseID;
-    private String wareHouseName;
     private String referenceNo;
     private String deliveryStatus;
     private String customerName;

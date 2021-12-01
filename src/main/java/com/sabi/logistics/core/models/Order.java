@@ -5,7 +5,6 @@ import com.google.gson.annotations.SerializedName;
 import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
@@ -19,8 +18,6 @@ import java.time.LocalDateTime;
 @Table(name = "`Order`")
 public class Order extends CoreEntity {
 
-    @Column(nullable = false)
-    private long wareHouseID;
     private String referenceNo;
     private String deliveryStatus;
     private String customerName;

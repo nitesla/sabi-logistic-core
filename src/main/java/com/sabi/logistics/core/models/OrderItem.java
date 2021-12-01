@@ -25,5 +25,6 @@ public class OrderItem extends CoreEntity {
     private int height;
     private int length;
     private long orderID;
+    private long wareHouseID;
 
 }

@@ -29,5 +29,9 @@ public class WarehouseUser extends CoreEntity {
     private String phone;
     @Transient
     private String wareHouseName;
+    @Transient
+    private Long roleId;
+    @Transient
+    private String roleName;
 
 }
