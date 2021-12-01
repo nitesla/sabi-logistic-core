@@ -13,6 +13,7 @@ public class InventoryDto {
     private String productName;
     private int qty;
     private BigDecimal totalAmount;
+    private Long wareHouseId;
     private String status;
     private String deliveryPartnerName;
     private String deliveryPartnerEmail;

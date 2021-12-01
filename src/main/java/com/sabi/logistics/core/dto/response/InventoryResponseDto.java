@@ -3,6 +3,7 @@ package com.sabi.logistics.core.dto.response;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
+import java.beans.Transient;
 import java.math.BigDecimal;
 import java.security.Timestamp;
 import java.time.LocalDateTime;
@@ -16,6 +17,8 @@ public class InventoryResponseDto {
     private String productName;
     private int qty;
     private BigDecimal totalAmount;
+    private Long wareHouseId;
+    private String warehouseName;
     private String status;
     private String deliveryPartnerName;
     private String deliveryPartnerEmail;

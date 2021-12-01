@@ -5,8 +5,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 import java.math.BigDecimal;
-import java.security.Timestamp;
 import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper=false)
@@ -19,6 +19,7 @@ public class Inventory extends CoreEntity {
     private String productName;
     private int qty;
     private BigDecimal totalAmount;
+    private Long wareHouseId;
     private String status;
     private String deliveryPartnerName;
     private String deliveryPartnerEmail;
@@ -27,4 +28,6 @@ public class Inventory extends CoreEntity {
     private LocalDateTime deliveryDate;
     private LocalDateTime dateShipped;
     private Long shippingId;
+    @Transient
+    private String warehouseName;
 }
