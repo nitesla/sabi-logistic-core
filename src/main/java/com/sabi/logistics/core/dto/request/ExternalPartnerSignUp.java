@@ -1,7 +1,6 @@
 package com.sabi.logistics.core.dto.request;
 
 import com.sabi.logistics.core.models.PartnerAssetType;
-import com.sabi.logistics.core.models.PartnerLocation;
 import lombok.Data;
 
 import java.util.List;
@@ -10,20 +9,20 @@ import java.util.List;
 public class ExternalPartnerSignUp {
 
 
-    private String supplierCategoryId;
-    private String address;
-    private String email;
-    private String lgaId;
+
     private String firstName;
     private String lastName;
-    private String password;
-    private String name;
+    private String email;
     private String phone;
-    private String webSite;
+    private String name;
+    private String password;
     private List<PartnerAssetType> assets;
-    private List<PartnerLocation> locations;
 
-//    private String deliveryType;
+
+
+
+
+
 
 
 
