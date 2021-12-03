@@ -30,5 +30,13 @@ public class TripItem extends CoreEntity {
     private String customerName;
     @Transient
     private String customerPhone;
+    @Transient
+    private Long orderId;
+    @Transient
+    private String referenceNo;
+    @Transient
+    private double tax;
+    @Transient
+    private double totalAmount;
 
 }

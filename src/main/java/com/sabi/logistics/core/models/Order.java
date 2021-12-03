@@ -31,5 +31,6 @@ public class Order extends CoreEntity {
     private String qrCode;
     private double totalAmount;
     private int totalQuantity;
+    private double tax;
 
 }

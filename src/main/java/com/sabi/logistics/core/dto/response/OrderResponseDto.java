@@ -37,6 +37,7 @@ public class OrderResponseDto {
     private int totalQuantity;
     private LocalDateTime createdDate;
     private List<OrderItem> orderItem;
+    private double tax;
 
 
 }

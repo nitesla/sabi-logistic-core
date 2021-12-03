@@ -1,6 +1,5 @@
 package com.sabi.logistics.core.dto.request;
 
-import com.sabi.logistics.core.models.OrderItem;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -53,6 +52,6 @@ public class OrderRequestDto {
     @Min(message = "Total Quantity can not be less than 0", value = 1)
     private Integer totalQuantity;
 
-    private OrderItem orderItem;
+    private Double tax;
 
 }

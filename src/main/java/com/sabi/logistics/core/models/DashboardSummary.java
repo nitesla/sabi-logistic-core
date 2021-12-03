@@ -4,6 +4,7 @@ import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
 import javax.persistence.Entity;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
@@ -18,7 +19,7 @@ public class DashboardSummary extends CoreEntity {
     private LocalDateTime date;
     private long assetTypeId;
     private Integer totalCompletedTrips;
-    private double totalEarnings;
+    private BigDecimal totalEarnings;
     private Integer outstandingTrips;
-    private double outstandingAmount;
+    private BigDecimal outstandingAmount;
 }
