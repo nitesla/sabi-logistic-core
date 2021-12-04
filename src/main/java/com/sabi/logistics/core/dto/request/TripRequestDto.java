@@ -27,10 +27,10 @@ public class TripRequestDto {
     private String status;
 
     private String deliveryStatus;
-    private Long driverID;
+    private Long driverAssistantUserId;
+    private Long driverUserId;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
-    private Long driverAssistantID;
 //    private TripItem tripItem;
 //    private TripRequestResponse tripRequestResponse;
 

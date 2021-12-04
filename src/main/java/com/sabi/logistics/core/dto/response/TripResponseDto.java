@@ -49,6 +49,8 @@ public class TripResponseDto {
     private Long wareHouseId;
     private String wareHouseAddress;
     private Integer dropOff;
+    private Long driverAssistantUserId;
+    private Long driverUserId;
 
 
 }

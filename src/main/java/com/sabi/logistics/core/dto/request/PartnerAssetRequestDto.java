@@ -78,7 +78,6 @@ public class PartnerAssetRequestDto {
 //    @NotNull(message = "driver assistant Id can not be null")
 //    @Min(value = 1, message = "driver assistant Id can not be less than 0.0")
 //    private Long driverAssistantId;
-    private String driverAssistantName;
     private Long driverAssistantUserId;
     private Long driverUserId;
 }
