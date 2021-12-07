@@ -40,6 +40,10 @@ public class TripRequest extends CoreEntity {
     private String wareHouseAddress;
     private Integer dropOff;
     @Transient
+    private Long driverAssistantUserId;
+    @Transient
+    private Long driverUserId;
+    @Transient
     private String partnerName;
     @Transient
     private String partnerAssetName;
