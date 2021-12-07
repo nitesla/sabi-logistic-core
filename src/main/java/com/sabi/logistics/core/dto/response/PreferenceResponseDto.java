@@ -19,6 +19,7 @@ public class PreferenceResponseDto {
     private Boolean cancelledTrip;
     private Boolean problemWithTrip;
     private Boolean sabiToSendTripDirectlyToAvailableDrivers;
+    private Boolean userIsCreated;
     private Long partnerId;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
