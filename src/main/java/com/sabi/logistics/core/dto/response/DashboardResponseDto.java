@@ -6,7 +6,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -14,10 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class DashboardResponseDto {
-    private Long id;
     private Long partnerId;
-    private LocalDateTime date;
-    private Long assetTypeId;
     private Integer totalCompletedTrips;
     private Double totalEarnings;
     private Integer outstandingTrips;
@@ -26,9 +22,11 @@ public class DashboardResponseDto {
     private Integer incomingTrip;
     private Integer completedTrip;
     private Integer cancelledTrip;
-    private Integer outgoingTrip;
-    private String assetTypeName;
-    private Long tripRequestId;
+    private Integer ongoingTrip;
+
+    private Integer availablePartnerAsset;
+    private Integer inTransitPartnerAsset;
+
 
     private List<TripAssetDto> tripAsset;
 
