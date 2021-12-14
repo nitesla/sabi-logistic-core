@@ -19,15 +19,15 @@ import java.time.LocalDateTime;
 public class TripRequest extends CoreEntity {
 
     @Column(nullable = false)
-    private long partnerID;
+    private long partnerId;
     private String referenceNo;
     private String status;
-    private long partnerAssetID;
+    private long partnerAssetId;
     private String deliveryStatus;
-    private long driverID;
+    private long driverId;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
-    private long driverAssistantID;
+    private long driverAssistantId;
     private String barCode;
     @SerializedName("QRCode")
     @JsonProperty("QRCode")
@@ -38,7 +38,7 @@ public class TripRequest extends CoreEntity {
     private LocalDateTime dateDelivered;
     private long wareHouseId;
     private String wareHouseAddress;
-    private Integer dropOff;
+    private Integer dropOffCount;
     @Transient
     private Long driverAssistantUserId;
     @Transient

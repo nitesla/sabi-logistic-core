@@ -18,13 +18,14 @@ public class OrderItem extends CoreEntity {
     @Column(nullable = false)
     private String deliveryStatus;
     private LocalDateTime dateDelivered;
-    private String name;
+    private String productName;
     private int qty;
     private LocalDateTime expectedDeliveryDate;
     private int weight;
     private int height;
     private int length;
-    private long orderID;
-    private long wareHouseID;
+    private long orderId;
+    private long wareHouseId;
+    private long thirdPartyProductId;
 
 }
