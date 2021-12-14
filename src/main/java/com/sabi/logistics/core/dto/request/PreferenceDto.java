@@ -15,5 +15,6 @@ public class PreferenceDto {
     private Boolean cancelledTrip;
     private Boolean problemWithTrip;
     private Boolean sabiToSendTripDirectlyToAvailableDrivers;
+    private Boolean userIsCreated;
     private Long partnerId;
 }

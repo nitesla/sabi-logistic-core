@@ -21,5 +21,6 @@ public class Preference extends CoreEntity {
     private Boolean cancelledTrip;
     private Boolean problemWithTrip;
     private Boolean sabiToSendTripDirectlyToAvailableDrivers;
+    private Boolean userIsCreated;
     private Long partnerId;
 }
