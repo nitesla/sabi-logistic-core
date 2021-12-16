@@ -4,8 +4,10 @@ import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -32,4 +34,15 @@ public class DropOff extends CoreEntity {
     private String customerRating;
     private String driverRating;
     private String serviceRating;
+
+    private LocalDateTime deliveryDate;
+    @Transient
+    private String customerName;
+    @Transient
+    private String customerPhone;
+
+
+
+    @Transient
+    private List<DropOffItem> dropOffItem;
 }
