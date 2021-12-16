@@ -37,7 +37,14 @@ public class TripRequest extends CoreEntity {
     private LocalDateTime deliveryDate;
     private LocalDateTime dateDelivered;
     private long wareHouseId;
+    @Transient
     private String wareHouseAddress;
+    @Transient
+    private String contactPerson;
+    @Transient
+    private String contactPhone;
+    @Transient
+    private String contactEmail;
     private Integer dropOffCount;
     @Transient
     private Long driverAssistantUserId;

@@ -52,6 +52,9 @@ public class TripResponseDto {
     private Integer dropOffCount;
     private Long driverAssistantUserId;
     private Long driverUserId;
+    private String contactPerson;
+    private String contactPhone;
+    private String contactEmail;
 
 
 }
