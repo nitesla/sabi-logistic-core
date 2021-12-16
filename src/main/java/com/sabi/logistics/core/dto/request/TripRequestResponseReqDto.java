@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class TripRequestResponseReqDto {
     private Long id;
-    private Long tripRequestID;
+    private Long tripRequestId;
     private String status;
-    private Long partnerID;
+    private Long partnerId;
 }

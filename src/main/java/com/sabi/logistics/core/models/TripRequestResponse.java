@@ -16,6 +16,6 @@ public class TripRequestResponse extends CoreEntity {
 
     @Column(nullable = false)
     private String status;
-    private long partnerID;
-    private long tripRequestID;
+    private long partnerId;
+    private long tripRequestId;
 }

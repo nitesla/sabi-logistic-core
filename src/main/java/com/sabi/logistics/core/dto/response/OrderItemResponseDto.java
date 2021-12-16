@@ -19,14 +19,15 @@ public class OrderItemResponseDto {
 
     private Long id;
     private String deliveryStatus;
-    private long orderID;
+    private Long orderId;
     private LocalDateTime dateDelivered;
-    private String name;
-    private int qty;
+    private String productName;
+    private Integer qty;
     private LocalDateTime expectedDeliveryDate;
-    private int weight;
-    private int height;
-    private int length;
-    private Long wareHouseID;
+    private Integer weight;
+    private Integer height;
+    private Integer length;
+    private Long wareHouseId;
     private String wareHouseName;
+    private Long thirdPartyProductId;
 }

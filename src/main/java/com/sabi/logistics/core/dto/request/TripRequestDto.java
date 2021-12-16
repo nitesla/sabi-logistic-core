@@ -14,26 +14,15 @@ import java.time.LocalDateTime;
 @Builder
 public class TripRequestDto {
     private Long id;
-
-//    @NotNull(message = "PartnerID can not be blank")
-//    @Min(message = "PartnerID can not be less than 1", value = 1)
-    private Long partnerID;
-
-//    @NotNull(message = "partnerAssetID can not be blank")
-//    @Min(message = "partnerAssetID can not be less than 1", value = 1)
-    private Long partnerAssetID;
-
+    private Long partnerId;
+    private Long partnerAssetId;
     @NotBlank(message = "Status can not be blank")
     private String status;
-
     private String deliveryStatus;
     private Long driverAssistantUserId;
     private Long driverUserId;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
-//    private TripItem tripItem;
-//    private TripRequestResponse tripRequestResponse;
-
     private Integer weight;
     private LocalDateTime deliveryDate;
     private LocalDateTime dateDelivered;

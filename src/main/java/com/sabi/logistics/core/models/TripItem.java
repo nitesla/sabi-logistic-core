@@ -3,10 +3,7 @@ package com.sabi.logistics.core.models;
 import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Transient;
-import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -16,27 +13,9 @@ import java.time.LocalDateTime;
 @Entity
 public class TripItem extends CoreEntity {
 
-    @Column(nullable = false)
-    private String status;
-    private LocalDateTime deliveryDate;
-    private long orderItemID;
-    @Transient
-    private String orderItemName;
-    private long tripRequestID;
-    private String deliveryAddress;
-    @Transient
+    private long thirdPartyProductId;
+    private long tripRequestId;
+    private String productName;
     private int qty;
-    @Transient
-    private String customerName;
-    @Transient
-    private String customerPhone;
-    @Transient
-    private Long orderId;
-    @Transient
-    private String referenceNo;
-    @Transient
-    private double tax;
-    @Transient
-    private double totalAmount;
-
+    private int qtyPickedUp;
 }

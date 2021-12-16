@@ -17,21 +17,17 @@ import java.time.LocalDateTime;
 public class OrderItemRequestDto {
     private Long id;
 
-//    @NotNull(message = "Reference No can not be blank")
-//    @Min(message = "Reference No can not be less than 0", value = 1)
-//    private String referenceNo;
-
     @NotBlank(message = "Delivery Status can not be blank")
     private String deliveryStatus;
 
-    @NotNull(message = "orderID can not be blank")
-    @Min(message = "orderID can not be less than 1", value = 1)
-    private Long orderID;
+    @NotNull(message = "orderId can not be blank")
+    @Min(message = "orderId can not be less than 1", value = 1)
+    private Long orderId;
 
     private LocalDateTime dateDelivered;
 
     @NotBlank(message = "Name can not be empty")
-    private String name;
+    private String productName;
 
     @NotNull(message = "Qty can not be empty")
     @Min(message = "Qty can not be less than 0", value = 1)
@@ -54,5 +50,7 @@ public class OrderItemRequestDto {
 
     @NotNull(message = "WareHouse Id can not be blank")
     @Min(message = "WareHouse Id can not be less than 1", value = 1)
-    private Long wareHouseID;
+    private Long wareHouseId;
+
+    private Long thirdPartyProductId;
 }
