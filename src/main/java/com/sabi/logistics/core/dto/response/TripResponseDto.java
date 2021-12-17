@@ -55,6 +55,7 @@ public class TripResponseDto {
     private String contactPerson;
     private String contactPhone;
     private String contactEmail;
+    private String rejectReason;
 
 
 }

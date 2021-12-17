@@ -27,5 +27,7 @@ public class TripRequestDto {
     private LocalDateTime deliveryDate;
     private LocalDateTime dateDelivered;
     private Long wareHouseId;
+    private String rejectReason;
+    private String wareHouseAddress;
 
 }

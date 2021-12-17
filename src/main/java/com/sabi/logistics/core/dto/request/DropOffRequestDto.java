@@ -23,7 +23,6 @@ public class DropOffRequestDto {
     private Integer qtyDelivered;
     private Long orderId;
     private String phoneNo;
-    private String address;
     private String email;
     private String deliveryStatus;
     private LocalDateTime deliveredDate;

@@ -26,8 +26,8 @@ public class DropOffResponseDto {
     private int qtyDelivered;
     private long orderId;
     private String phoneNo;
-    private String address;
     private String email;
+    private String deliveryAddress;
     private String deliveryStatus;
     private LocalDateTime deliveredDate;
     private String reasonForReturn;
