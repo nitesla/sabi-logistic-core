@@ -7,12 +7,13 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class TripRequestDto {
+public class TripMasterRequestDto {
     private Long id;
     private Long partnerId;
     private Long partnerAssetId;
@@ -29,5 +30,9 @@ public class TripRequestDto {
     private Long wareHouseId;
     private String rejectReason;
     private String wareHouseAddress;
+
+    private List<DropOffMasterRequestDto> dropOff;
+
+
 
 }

@@ -5,6 +5,7 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -18,4 +19,6 @@ public class TripRequestResponse extends CoreEntity {
     private String status;
     private long partnerId;
     private long tripRequestId;
+    private LocalDateTime responseDate;
+    private String rejectReason;
 }
