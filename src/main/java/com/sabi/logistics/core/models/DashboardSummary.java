@@ -32,5 +32,5 @@ public class DashboardSummary  {
 //    private Integer totalCompletedTrips;
     private BigDecimal totalEarnings;
 //    private Integer outstandingTrips;
-    private BigDecimal outstandingAmount;
+//    private BigDecimal outstandingAmount;
 }
