@@ -1,7 +1,6 @@
-package com.sabi.logistics.core.dto.response;
+package com.sabi.logistics.core.dto.request;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.sabi.logistics.core.models.DropOffItem;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,23 +10,21 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
-@JsonInclude(JsonInclude.Include.NON_NULL)
-public class DropOffResponseDto {
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class DropOffMasterRequestDto {
     private Long id;
-    private long tripRequestId;
+    private Long tripRequestId;
     private BigDecimal totalAmount;
     private BigDecimal amountCollected;
-    private int qty;
-    private int qtyReturned;
-    private int qtyDelivered;
-    private long orderId;
+    private Integer qty;
+    private Integer qtyReturned;
+    private Integer qtyDelivered;
+    private Long orderId;
     private String phoneNo;
     private String email;
-    private String deliveryAddress;
     private String deliveryStatus;
     private LocalDateTime deliveredDate;
     private String reasonForReturn;
@@ -35,9 +32,7 @@ public class DropOffResponseDto {
     private String customerRating;
     private String driverRating;
     private String serviceRating;
-    private List<DropOffItem> dropOffItem;
     private LocalDateTime deliveryDate;
-    private String customerName;
-    private String customerPhone;
 
+    private List<DropOffItemRequestDto> dropOffItem;
 }

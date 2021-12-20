@@ -4,9 +4,6 @@ package com.sabi.logistics.core.dto.response;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
-import com.sabi.logistics.core.models.DropOff;
-import com.sabi.logistics.core.models.TripItem;
-import com.sabi.logistics.core.models.TripRequestResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,7 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class TripResponseDto {
+public class TripMasterResponseDto {
 
     private Long id;
     private Long partnerId;
@@ -41,9 +38,8 @@ public class TripResponseDto {
     @SerializedName("QRCode")
     @JsonProperty("QRCode")
     private String qrCode;
-    private List<DropOff> dropOff;
-    private List <TripRequestResponse> tripRequestResponse;
-    private List <TripItem> tripItem;
+    private List<DropOffResponseDto> dropOff;
+    private List<DropOffItemResponseDto> dropOffItem;
     private Integer weight;
     private LocalDateTime deliveryDate;
     private LocalDateTime dateDelivered;
