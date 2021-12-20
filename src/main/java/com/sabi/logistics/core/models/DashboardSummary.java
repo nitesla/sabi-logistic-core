@@ -17,9 +17,10 @@ public class DashboardSummary extends CoreEntity {
 
     private long partnerId;
     private LocalDateTime date;
-    private long assetTypeId;
-    private Integer totalCompletedTrips;
+    private Long assetTypeId;
+    private String deliveryStatus;
+//    private Integer totalCompletedTrips;
     private BigDecimal totalEarnings;
-    private Integer outstandingTrips;
+//    private Integer outstandingTrips;
     private BigDecimal outstandingAmount;
 }

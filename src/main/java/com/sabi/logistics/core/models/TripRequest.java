@@ -22,7 +22,9 @@ public class TripRequest extends CoreEntity {
     private long partnerId;
     private String referenceNo;
     private String status;
+    //--------  assetTypeId
     private long partnerAssetId;
+
     private String deliveryStatus;
     private long driverId;
     private LocalDateTime startTime;
@@ -37,6 +39,10 @@ public class TripRequest extends CoreEntity {
     private LocalDateTime deliveryDate;
     private LocalDateTime dateDelivered;
     private long wareHouseId;
+
+    private String processingStatus;
+
+
     @Transient
     private String wareHouseAddress;
     @Transient
