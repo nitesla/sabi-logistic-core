@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,4 +16,6 @@ public class TripRequestResponseReqDto {
     private Long tripRequestId;
     private String status;
     private Long partnerId;
+    private LocalDateTime responseDate;
+    private String rejectReason;
 }

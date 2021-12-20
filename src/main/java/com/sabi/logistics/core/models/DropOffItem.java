@@ -25,7 +25,6 @@ public class DropOffItem extends CoreEntity {
     private String productName;
     private String status;
     private LocalDateTime deliveryDate;
-    private String deliveryAddress;
     private long orderItemId;
     @Transient
     private String orderItemName;
