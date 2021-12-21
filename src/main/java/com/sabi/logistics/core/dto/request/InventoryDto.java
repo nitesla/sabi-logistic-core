@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 public class InventoryDto {
@@ -22,6 +23,8 @@ public class InventoryDto {
     private LocalDateTime deliveryDate;
     private LocalDateTime dateShipped;
     private Long shippingId;
+
+    private List<Long> orderItemId;
 
 
 }
