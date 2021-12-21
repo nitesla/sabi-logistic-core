@@ -8,6 +8,7 @@ import lombok.*;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Transient;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
@@ -24,6 +25,7 @@ public class TripRequest extends CoreEntity {
     private String status;
     private long partnerAssetId;
     private String deliveryStatus;
+    private BigDecimal earnings;
     private long driverId;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
