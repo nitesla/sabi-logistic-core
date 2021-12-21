@@ -29,5 +29,7 @@ public class TripRequestDto {
     private Long wareHouseId;
     private String rejectReason;
     private String wareHouseAddress;
+    private String paymentStatus;
+    private LocalDateTime driverArriverTime;
 
 }

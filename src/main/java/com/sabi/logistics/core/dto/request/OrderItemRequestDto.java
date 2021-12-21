@@ -53,4 +53,6 @@ public class OrderItemRequestDto {
     private Long wareHouseId;
 
     private Long thirdPartyProductId;
+
+    private Long inventoryId;
 }
