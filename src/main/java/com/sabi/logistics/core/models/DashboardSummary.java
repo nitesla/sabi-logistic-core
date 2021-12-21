@@ -27,10 +27,10 @@ public class DashboardSummary  {
     private Long id;
     private long partnerId;
     private LocalDateTime date;
-    private Long assetTypeId;
-    private String deliveryStatus;
-//    private Integer totalCompletedTrips;
+    private long assetTypeId;
+//    private String deliveryStatus;
+    private Integer totalCompletedTrips;
     private BigDecimal totalEarnings;
-//    private Integer outstandingTrips;
-//    private BigDecimal outstandingAmount;
+    private Integer outstandingTrips;
+    private BigDecimal outstandingAmount;
 }
