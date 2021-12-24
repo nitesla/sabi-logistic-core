@@ -35,7 +35,8 @@ public class OrderItemResponseDto {
     private String customerName;
     private String customerPhone;
     private String deliveryAddress;
-    private Long price;
+    private BigDecimal unitPrice;
+    private BigDecimal totalPrice;
     private LocalDateTime acceptedDate;
     private LocalDateTime createdDate;
 }
