@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 
@@ -31,4 +32,10 @@ public class OrderItemResponseDto {
     private String wareHouseName;
     private Long thirdPartyProductId;
     private Long inventoryId;
+    private String customerName;
+    private String customerPhone;
+    private String deliveryAddress;
+    private Long price;
+    private LocalDateTime acceptedDate;
+    private LocalDateTime createdDate;
 }

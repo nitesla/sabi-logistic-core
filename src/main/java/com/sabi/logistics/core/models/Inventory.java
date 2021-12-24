@@ -28,6 +28,7 @@ public class Inventory extends CoreEntity {
     private LocalDateTime deliveryDate;
     private LocalDateTime dateShipped;
     private Long shippingId;
+    private LocalDateTime acceptedDate;
     @Transient
     private String warehouseName;
 }
