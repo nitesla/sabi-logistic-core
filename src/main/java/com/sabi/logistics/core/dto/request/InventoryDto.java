@@ -24,6 +24,8 @@ public class InventoryDto {
     private LocalDateTime dateShipped;
     private Long shippingId;
 
+    private LocalDateTime acceptedDate;
+
     private List<Long> orderItemId;
 
 

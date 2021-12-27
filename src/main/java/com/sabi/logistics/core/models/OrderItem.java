@@ -5,6 +5,8 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Transient;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
@@ -28,5 +30,19 @@ public class OrderItem extends CoreEntity {
     private long wareHouseId;
     private long thirdPartyProductId;
     private Long inventoryId;
+
+    private BigDecimal unitPrice;
+
+    private BigDecimal totalPrice;
+    @Transient
+    private String customerName;
+    @Transient
+    private String customerPhone;
+    @Transient
+    private String deliveryAddress;
+    @Transient
+    private LocalDateTime acceptedDate;
+    @Transient
+    private LocalDateTime createdDate;
 
 }

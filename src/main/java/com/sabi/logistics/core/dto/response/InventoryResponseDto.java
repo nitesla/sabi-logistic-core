@@ -32,4 +32,5 @@ public class InventoryResponseDto {
     private Long createdBy;
     private Long updatedBy;
     private Boolean isActive;
+    private LocalDateTime acceptedDate;
 }
