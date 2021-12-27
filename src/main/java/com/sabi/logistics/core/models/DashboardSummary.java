@@ -25,10 +25,13 @@ public class DashboardSummary  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private long partnerId;
+    private Long partnerId;
+    private String referenceNo;
     private LocalDateTime date;
-    private long assetTypeId;
-//    private String deliveryStatus;
+    private Long assetTypeId;
+    private String deliveryStatus;
+    private BigDecimal earnings;
+
     private Integer totalCompletedTrips;
     private BigDecimal totalEarnings;
     private Integer outstandingTrips;
