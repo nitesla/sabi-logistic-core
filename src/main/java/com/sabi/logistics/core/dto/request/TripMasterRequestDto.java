@@ -32,6 +32,9 @@ public class TripMasterRequestDto {
     private String wareHouseAddress;
     private String paymentStatus;
     private LocalDateTime driverArriverTime;
+    private String contactPerson;
+    private String contactPhone;
+    private String contactEmail;
 
     private List<DropOffMasterRequestDto> dropOff;
 
