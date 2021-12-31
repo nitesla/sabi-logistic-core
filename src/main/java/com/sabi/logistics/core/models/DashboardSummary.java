@@ -14,11 +14,12 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Entity
+@Data
 public class DashboardSummary  {
 
 
