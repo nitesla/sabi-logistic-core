@@ -43,11 +43,8 @@ public class TripRequest extends CoreEntity {
     private long wareHouseId;
     private String rejectReason;
     private String wareHouseAddress;
-    @Transient
     private String contactPerson;
-    @Transient
     private String contactPhone;
-    @Transient
     private String contactEmail;
     private Integer dropOffCount;
     @Transient

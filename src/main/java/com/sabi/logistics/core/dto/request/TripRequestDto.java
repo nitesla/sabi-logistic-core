@@ -31,5 +31,8 @@ public class TripRequestDto {
     private String wareHouseAddress;
     private String paymentStatus;
     private LocalDateTime driverArriverTime;
+    private String contactPerson;
+    private String contactPhone;
+    private String contactEmail;
 
 }
