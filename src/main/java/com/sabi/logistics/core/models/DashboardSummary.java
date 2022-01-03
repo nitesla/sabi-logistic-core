@@ -6,10 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -33,8 +30,12 @@ public class DashboardSummary  {
     private String deliveryStatus;
     private BigDecimal earnings;
 
+    @Transient
     private Integer totalCompletedTrips;
+    @Transient
     private BigDecimal totalEarnings;
+    @Transient
     private Integer outstandingTrips;
+    @Transient
     private BigDecimal outstandingAmount;
 }
