@@ -26,21 +26,21 @@ public class TripRequest extends CoreEntity {
     private long partnerAssetId;
     private String deliveryStatus;
     private BigDecimal earnings;
-    private long driverId;
+    private Long driverId;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
-    private long driverAssistantId;
+    private Long driverAssistantId;
     private String barCode;
     @SerializedName("QRCode")
     @JsonProperty("QRCode")
     private String qrCode;
 
-    private int weight;
+    private Integer weight;
     private LocalDateTime deliveryDate;
     private LocalDateTime dateDelivered;
     private String paymentStatus;
     private LocalDateTime driverArriverTime;
-    private long wareHouseId;
+    private Long wareHouseId;
     private String rejectReason;
     private String wareHouseAddress;
     private String contactPerson;
