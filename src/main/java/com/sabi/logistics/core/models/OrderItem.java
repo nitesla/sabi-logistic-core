@@ -42,7 +42,6 @@ public class OrderItem extends CoreEntity {
     private String deliveryAddress;
     @Transient
     private LocalDateTime acceptedDate;
-    @Transient
-    private LocalDateTime createdDate;
+
 
 }
