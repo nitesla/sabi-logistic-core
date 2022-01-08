@@ -26,10 +26,10 @@ public class TripRequest extends CoreEntity {
     private long partnerAssetId;
     private String deliveryStatus;
     private BigDecimal earnings;
-    private Long driverId;
+    private long driverId;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
-    private Long driverAssistantId;
+    private long driverAssistantId;
     private String barCode;
     @SerializedName("QRCode")
     @JsonProperty("QRCode")
