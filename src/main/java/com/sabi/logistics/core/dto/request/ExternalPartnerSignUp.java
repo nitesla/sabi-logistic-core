@@ -16,6 +16,8 @@ public class ExternalPartnerSignUp {
     private String phone;
     private String name;
     private String password;
+    private Long supplierId;
+    private Long lgaId;
     private List<PartnerAssetType> assets;
 
 

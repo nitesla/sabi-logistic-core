@@ -1,5 +1,6 @@
 package com.sabi.logistics.core.dto.response;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class PartnerUserResponseDto {
     private Long id;
     private String firstName;
@@ -23,5 +25,6 @@ public class PartnerUserResponseDto {
     private Long createdBy;
     private Long updatedBy;
     private Boolean isActive;
+    private String userType;
 
 }

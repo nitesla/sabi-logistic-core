@@ -30,6 +30,7 @@ public class Partner extends CoreEntity {
     private LocalDateTime registrationDate = LocalDateTime.now();
     private String registrationToken;
     private String registrationTokenExpiration;
+    private Long supplierId;
 
     @Transient
     private String lga;
