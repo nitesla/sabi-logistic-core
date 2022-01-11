@@ -36,12 +36,13 @@ public class DropOff extends CoreEntity {
     private String serviceRating;
 
     private LocalDateTime deliveryDate;
+    private LocalDateTime driverArriverTime;
     @Transient
     private String customerName;
     @Transient
     private String customerPhone;
 
-
+    private String paymentStatus;
 
     @Transient
     private List<DropOffItem> dropOffItem;

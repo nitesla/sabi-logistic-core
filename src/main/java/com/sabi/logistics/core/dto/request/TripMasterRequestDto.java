@@ -30,7 +30,7 @@ public class TripMasterRequestDto {
     private Long wareHouseId;
     private String rejectReason;
     private String wareHouseAddress;
-    private String paymentStatus;
+//    private String paymentStatus;
     private LocalDateTime driverArriverTime;
     private String contactPerson;
     private String contactPhone;

@@ -38,6 +38,7 @@ public class OrderResponseDto {
     private LocalDateTime createdDate;
     private List<OrderItem> orderItem;
     private double tax;
+    private String paymentStatus;
 
 
 }

@@ -1,6 +1,5 @@
 package com.sabi.logistics.core.dto.request;
 
-import com.sabi.logistics.core.models.OrderItem;
 import lombok.Data;
 
 import javax.validation.constraints.DecimalMin;
@@ -45,6 +44,7 @@ public class OrderOrderItemDto {
     private Integer totalQuantity;
 
     private Double tax;
+    private String paymentStatus;
 
     List<OrderItemRequestDto> OrderItemRequestDto;
 }

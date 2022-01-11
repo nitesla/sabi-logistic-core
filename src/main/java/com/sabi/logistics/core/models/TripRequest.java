@@ -38,7 +38,7 @@ public class TripRequest extends CoreEntity {
     private Integer weight;
     private LocalDateTime deliveryDate;
     private LocalDateTime dateDelivered;
-    private String paymentStatus;
+//    private String paymentStatus;
     private LocalDateTime driverArriverTime;
     private Long wareHouseId;
     private String rejectReason;
@@ -58,5 +58,9 @@ public class TripRequest extends CoreEntity {
     @Transient
     private String driverName;
     @Transient
+    private String driverPhone;
+    @Transient
     private String driverAssistantName;
+    @Transient
+    private String driverAssistantPhone;
 }

@@ -39,5 +39,6 @@ public class DropOffResponseDto {
     private LocalDateTime deliveryDate;
     private String customerName;
     private String customerPhone;
-
+    private String paymentStatus;
+    private LocalDateTime driverArriverTime;
 }

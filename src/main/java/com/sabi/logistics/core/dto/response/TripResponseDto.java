@@ -56,8 +56,10 @@ public class TripResponseDto {
     private String contactPhone;
     private String contactEmail;
     private String rejectReason;
-    private String paymentStatus;
+//    private String paymentStatus;
     private LocalDateTime driverArriverTime;
+    private String driverAssistantPhone;
+    private String driverPhone;
 
 
 }

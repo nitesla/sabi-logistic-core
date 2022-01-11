@@ -53,5 +53,6 @@ public class OrderRequestDto {
     private Integer totalQuantity;
 
     private Double tax;
+    private String paymentStatus;
 
 }
