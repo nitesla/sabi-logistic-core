@@ -13,6 +13,7 @@ public class PartnerResponseDto {
     private Long id;
     private String name;
     private Long lgaId;
+    private String lga;
     private String address;
     private String phone;
     private boolean isRegistered;
@@ -26,4 +27,6 @@ public class PartnerResponseDto {
     private Long createdBy;
     private Long updatedBy;
     private Boolean isActive;
+
+
 }
