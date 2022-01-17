@@ -23,7 +23,7 @@ public class TripRequest extends CoreEntity {
     private long partnerId;
     private String referenceNo;
     private String status;
-    private long partnerAssetId;
+    private Long partnerAssetId;
     private String deliveryStatus;
     private BigDecimal earnings;
     private Long driverId;
