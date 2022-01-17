@@ -35,5 +35,8 @@ public class Partner extends CoreEntity {
     @Transient
     private String lga;
 
+    @Transient
+    private String state;
+
 
 }
