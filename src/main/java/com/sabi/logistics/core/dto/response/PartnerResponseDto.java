@@ -27,6 +27,7 @@ public class PartnerResponseDto {
     private Long createdBy;
     private Long updatedBy;
     private Boolean isActive;
+    private String state;
 
 
 }
