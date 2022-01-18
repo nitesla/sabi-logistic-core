@@ -20,7 +20,7 @@ import java.time.LocalDateTime;
 public class TripRequest extends CoreEntity {
 
     @Column(nullable = false)
-    private long partnerId;
+    private Long partnerId;
     private String referenceNo;
     private String status;
     private Long partnerAssetId;

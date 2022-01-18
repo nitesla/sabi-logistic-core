@@ -34,6 +34,7 @@ public class DropOffMasterRequestDto {
     private String serviceRating;
     private LocalDateTime deliveryDate;
     private LocalDateTime driverArriverTime;
+    private String deliveryCode;
 
     private List<DropOffItemRequestDto> dropOffItem;
 }
