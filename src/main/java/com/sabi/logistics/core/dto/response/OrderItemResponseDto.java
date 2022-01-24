@@ -39,4 +39,5 @@ public class OrderItemResponseDto {
     private BigDecimal totalPrice;
     private LocalDateTime acceptedDate;
     private LocalDateTime createdDate;
+    private String referenceNo;
 }
