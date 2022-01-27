@@ -5,24 +5,23 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import java.math.BigDecimal;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class RouteLocationRequest {
+public class RouteLocationTollPriceRequest {
+
     private Long id;
     @NotNull(message = "State id is required")
     private Long stateId;
     @NotBlank(message = "Name is required")
     private String name;
-//    @NotBlank(message = "HasToll is required")
+    //    @NotBlank(message = "HasToll is required")
     private Boolean hasToll;
-//    @NotBlank(message = "TollRate is required")
-//    @DecimalMin(message = "Toll rate can not be less than 0", value = "0.0")
-//    private BigDecimal tollRate;
+
+    private List<TollPricesDto> tollPricesDtos;
 }
