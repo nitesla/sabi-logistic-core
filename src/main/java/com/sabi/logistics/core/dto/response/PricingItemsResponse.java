@@ -14,12 +14,14 @@ import java.time.LocalDateTime;
 @Builder
 public class PricingItemsResponse {
     private Long id;
-    private Long pricingConfiguartionId;
-    private Long assetTypeId;
+    private Long pricingConfigurationId;
+    private Long partnerAssetTypeId;
     private BigDecimal price;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
     private Boolean isActive;
     private Long createdBy;
     private Long updatedBy;
+    private Long assetTypeId;
+    private String assetTypeName;
 }

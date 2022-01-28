@@ -31,5 +31,11 @@ public class DropOffItemResponseDto {
     private String customerName;
     private String customerPhone;
     private Long orderId;
+    private Long driverId;
+    private String driverName;
+    private Long driverAssistantId;
+    private String driverAssistantName;
+    private String driverAssistantPhone;
+    private String driverPhone;
 
 }

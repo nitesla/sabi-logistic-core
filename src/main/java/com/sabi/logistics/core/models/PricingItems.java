@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @Builder
 @Entity
 public class PricingItems extends CoreEntity {
-    private Long pricingConfiguartionId;
-    private Long assetTypeId;
+    private Long pricingConfigurationId;
+    private Long partnerAssetTypeId;
     private BigDecimal price;
 }

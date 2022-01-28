@@ -19,5 +19,5 @@ public class DropOffStatusDto {
     private String deliveryStatus;
     private String deliveryCode;
 
-    private List<DropOffItemStatusDto> dropOffItem;
+    private List<DropOffItemRequestDto> dropOffItem;
 }

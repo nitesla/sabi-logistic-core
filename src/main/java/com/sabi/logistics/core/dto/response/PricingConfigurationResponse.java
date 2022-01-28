@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Builder
@@ -28,4 +29,10 @@ public class PricingConfigurationResponse {
     private Boolean isActive;
     private Long createdBy;
     private Long updatedBy;
+    private String tripType;
+    private Long departureStateId;
+    private String stateName;
+    private String departureStateName;
+
+    private List<PricingItemsResponse> pricingItems;
 }
