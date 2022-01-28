@@ -6,18 +6,20 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class RouteLocationResponse {
+public class RouteLocationTollPriceResponse {
+
     private Long id;
     private Long stateId;
     private String name;
     private Boolean hasToll;
-//    private BigDecimal tollRate;
+    //    private BigDecimal tollRate;
     private String stateName;
+    private List<TollPricesResponseDto> tollPricesResponseDtos;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
     private Boolean isActive;
