@@ -37,5 +37,6 @@ public class DropOffItemResponseDto {
     private String driverAssistantName;
     private String driverAssistantPhone;
     private String driverPhone;
+    private Boolean finalDropOff;
 
 }
