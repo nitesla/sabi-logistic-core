@@ -16,9 +16,9 @@ import java.math.BigDecimal;
 public class PricingItemsRequest {
     private Long id;
     @NotNull(message = "Pricing configuration Id is required")
-    private Long pricingConfiguartionId;
+    private Long pricingConfigurationId;
     @NotNull(message = "AssetTypeId is required")
-    private Long assetTypeId;
+    private Long partnerAssetTypeId;
     @DecimalMin(message = "price can not be negative", value = "0.0")
     @NotNull(message = "Price is required")
     private BigDecimal price;

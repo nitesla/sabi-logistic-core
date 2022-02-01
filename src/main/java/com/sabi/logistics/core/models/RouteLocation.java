@@ -5,6 +5,7 @@ import lombok.*;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 import java.math.BigDecimal;
 
 @EqualsAndHashCode(callSuper = true)
@@ -17,5 +18,7 @@ public class RouteLocation extends CoreEntity {
     private Long stateId;
     private String name;
     private Boolean hasToll;
-    private BigDecimal tollRate;
+//    private BigDecimal tollRate;
+    @Transient
+    private String stateName;
 }

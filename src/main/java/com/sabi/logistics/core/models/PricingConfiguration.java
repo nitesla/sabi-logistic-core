@@ -22,4 +22,7 @@ public class PricingConfiguration extends CoreEntity {
     private BigDecimal pricePerDistance;
     private BigDecimal pricePerTime;
     private Boolean hasPreferentialPricing;
+
+    private String tripType;
+    private Long departureStateId;
 }

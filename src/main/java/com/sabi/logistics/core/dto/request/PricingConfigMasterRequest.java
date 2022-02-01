@@ -9,12 +9,13 @@ import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class PricingConfigurationRequest {
+public class PricingConfigMasterRequest {
 
     private Long id;
     @NotNull(message = "Partner id can not be null")
@@ -39,4 +40,6 @@ public class PricingConfigurationRequest {
     private Boolean hasPreferentialPricing;
     private String tripType;
     private Long departureStateId;
+
+    private List<PricingItemsRequest> pricingItems;
 }
