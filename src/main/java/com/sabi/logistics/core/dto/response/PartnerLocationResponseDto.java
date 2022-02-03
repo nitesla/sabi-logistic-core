@@ -24,4 +24,5 @@ public class PartnerLocationResponseDto {
     private Boolean isActive;
     private Long createdBy;
     private Long updatedBy;
+    private String stateName;
 }
