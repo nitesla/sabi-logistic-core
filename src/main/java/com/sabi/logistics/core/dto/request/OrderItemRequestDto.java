@@ -55,8 +55,6 @@ public class OrderItemRequestDto {
 
     private Long thirdPartyProductId;
 
-    private Long inventoryId;
-
     private BigDecimal unitPrice;
 
     private BigDecimal totalPrice;

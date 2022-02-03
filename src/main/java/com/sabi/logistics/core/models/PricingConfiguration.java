@@ -25,4 +25,7 @@ public class PricingConfiguration extends CoreEntity {
 
     private String tripType;
     private Long departureStateId;
+
+    private String startingLocation;
+    private String destinationLocations;
 }
