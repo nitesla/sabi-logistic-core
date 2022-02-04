@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 public class PricingConfiguration extends CoreEntity {
     private Long partnerId;
     private String routeType;
-    private Long stateId;
+    private Long arrivalStateId;
     private String locationPreference;
     private BigDecimal pricePerParameter;
     private BigDecimal pricePerWeight;

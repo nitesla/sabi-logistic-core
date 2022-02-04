@@ -21,7 +21,7 @@ public class PricingConfigMasterRequest {
     private Long partnerId;
 //    @NotBlank(message = "Route type is required")
     private String routeType;
-    private Long stateId;
+    private Long arrivalStateId;
 //    @NotBlank(message = "Location Preference is required")
     private String locationPreference;
 //    @NotNull(message = "Price per parameter is required")
