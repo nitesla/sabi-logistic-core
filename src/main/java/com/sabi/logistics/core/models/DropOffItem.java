@@ -20,13 +20,12 @@ public class DropOffItem extends CoreEntity {
     private BigDecimal amountCollected;
     private int qtyGoodsReturned;
     private int qtyGoodsDelivered;
-    private String reasonForReturn;
     private long thirdPartyProductId;
     private String productName;
     private String status;
     private LocalDateTime deliveryDate;
     private long orderItemId;
-    private Boolean finalDropOff;
+    private BigDecimal outstandingAmount;
     @Transient
     private String orderItemName;
     @Transient

@@ -28,8 +28,7 @@ public class DropOffItemRequestDto {
     private BigDecimal amountCollected;
     private Integer qtyGoodsReturned;
     private Integer qtyGoodsDelivered;
-    private String reasonForReturn;
     private Long thirdPartyProductId;
     private String productName;
-    private Boolean finalDropOff;
+    private BigDecimal outstandingAmount;
 }
