@@ -27,9 +27,11 @@ public class DropOffItem extends CoreEntity {
     private LocalDateTime deliveryDate;
     private long orderItemId;
     private Boolean finalDropOff;
+    private BigDecimal totalAmount;
+    private BigDecimal unitPrice;
+    private BigDecimal outstandingAmount;
     @Transient
     private String orderItemName;
-    @Transient
     private int qty;
     @Transient
     private String customerName;
@@ -41,7 +43,5 @@ public class DropOffItem extends CoreEntity {
     private String referenceNo;
     @Transient
     private double tax;
-    @Transient
-    private double totalAmount;
 
 }
