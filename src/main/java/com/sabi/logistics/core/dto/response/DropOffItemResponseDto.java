@@ -20,7 +20,6 @@ public class DropOffItemResponseDto {
     private BigDecimal amountCollected;
     private Integer qtyGoodsReturned;
     private Integer qtyGoodsDelivered;
-    private String reasonForReturn;
     private Long thirdPartyProductId;
     private String productName;
     private String status;
@@ -37,6 +36,6 @@ public class DropOffItemResponseDto {
     private String driverAssistantName;
     private String driverAssistantPhone;
     private String driverPhone;
-    private Boolean finalDropOff;
+    private BigDecimal outstandingAmount;
 
 }

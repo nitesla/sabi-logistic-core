@@ -42,4 +42,7 @@ public class DropOffResponseDto {
     private String paymentStatus;
     private LocalDateTime driverArriverTime;
     private String deliveryCode;
+    private Boolean finalDropOff;
+    private String returnStatus;
+    private String paidStatus;
 }

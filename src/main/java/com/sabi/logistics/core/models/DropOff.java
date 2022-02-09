@@ -46,6 +46,12 @@ public class DropOff extends CoreEntity {
 
     private String deliveryCode;
 
+    private Boolean finalDropOff;
+
+    private String returnStatus;
+
+    private String paidStatus;
+
     @Transient
     private List<DropOffItem> dropOffItem;
 }

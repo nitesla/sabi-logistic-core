@@ -18,6 +18,8 @@ public class DropOffStatusDto {
     private BigDecimal totalAmount;
     private String deliveryStatus;
     private String deliveryCode;
-
+    private Boolean finalDropOff;
+    private String returnStatus;
+    private String paidStatus;
     private List<DropOffItemRequestDto> dropOffItem;
 }

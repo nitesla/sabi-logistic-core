@@ -34,4 +34,7 @@ public class DropOffRequestDto {
     private LocalDateTime deliveryDate;
     private LocalDateTime driverArriverTime;
     private String deliveryCode;
+    private Boolean finalDropOff;
+    private String returnStatus;
+    private String paidStatus;
 }
