@@ -57,5 +57,8 @@ public class TripMasterResponseDto {
     private String driverAssistantPhone;
     private String driverPhone;
 
+    private LocalDateTime assignedDate;
+    private LocalDateTime expiredTime;
+
 
 }

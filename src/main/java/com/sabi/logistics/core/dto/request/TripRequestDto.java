@@ -35,4 +35,7 @@ public class TripRequestDto {
     private String contactPhone;
     private String contactEmail;
 
+    private LocalDateTime assignedDate;
+    private LocalDateTime expiredTime;
+
 }

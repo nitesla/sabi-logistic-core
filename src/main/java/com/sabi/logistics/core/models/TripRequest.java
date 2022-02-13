@@ -48,6 +48,9 @@ public class TripRequest extends CoreEntity {
     private String contactEmail;
     private Integer dropOffCount;
 
+    private LocalDateTime assignedDate;
+    private LocalDateTime expiredTime;
+
     @Transient
     private Long driverAssistantUserId;
     @Transient
