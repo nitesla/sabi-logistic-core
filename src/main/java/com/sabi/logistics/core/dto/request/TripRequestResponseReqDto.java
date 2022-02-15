@@ -18,4 +18,5 @@ public class TripRequestResponseReqDto {
     private Long partnerId;
     private LocalDateTime responseDate;
     private String rejectReason;
+    private String additionalInfo;
 }

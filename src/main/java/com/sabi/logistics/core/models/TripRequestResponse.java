@@ -21,4 +21,5 @@ public class TripRequestResponse extends CoreEntity {
     private long tripRequestId;
     private LocalDateTime responseDate;
     private String rejectReason;
+    private String additionalInfo;
 }

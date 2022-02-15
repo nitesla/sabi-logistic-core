@@ -42,6 +42,7 @@ public class TripRequest extends CoreEntity {
     private LocalDateTime driverArriverTime;
     private Long wareHouseId;
     private String rejectReason;
+    private String additionalInfo;
     private String wareHouseAddress;
     private String contactPerson;
     private String contactPhone;

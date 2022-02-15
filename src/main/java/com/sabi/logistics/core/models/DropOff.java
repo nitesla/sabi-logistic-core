@@ -1,6 +1,9 @@
 package com.sabi.logistics.core.models;
 
 import com.sabi.framework.models.CoreEntity;
+import com.sabi.logistics.core.enums.PaidStatus;
+import com.sabi.logistics.core.enums.PaymentStatus;
+import com.sabi.logistics.core.enums.ReturnStatus;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -42,15 +45,15 @@ public class DropOff extends CoreEntity {
     @Transient
     private String customerPhone;
 
-    private String paymentStatus;
+    private PaymentStatus paymentStatus;
 
     private String deliveryCode;
 
     private Boolean finalDropOff;
 
-    private String returnStatus;
+    private ReturnStatus returnStatus;
 
-    private String paidStatus;
+    private PaidStatus paidStatus;
 
     @Transient
     private List<DropOffItem> dropOffItem;

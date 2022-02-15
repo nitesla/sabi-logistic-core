@@ -38,6 +38,7 @@ public class TripMasterRequestDto {
 
     private LocalDateTime assignedDate;
     private LocalDateTime expiredTime;
+    private String additionalInfo;
 
     private List<DropOffMasterRequestDto> dropOff;
 

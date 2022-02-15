@@ -1,5 +1,6 @@
 package com.sabi.logistics.core.dto.request;
 
+import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.Data;
 
 import javax.validation.constraints.DecimalMin;
@@ -29,12 +30,6 @@ public class OrderOrderItemDto {
 
     private LocalDateTime expectedDeliveryDate;
 
-//    @NotBlank(message = "BarCode can not be blank")
-//    private String barCode;
-//
-//    @NotBlank(message = "QRcode can not be blank")
-//    private String QRcode;
-
     @NotNull(message = "Total Amount can not be empty")
     @DecimalMin(value = "0.0", message = "Total Amount can not be less than 0.0")
     private Double totalAmount;
@@ -44,7 +39,7 @@ public class OrderOrderItemDto {
     private Integer totalQuantity;
 
     private Double tax;
-    private String paymentStatus;
+    private PaymentStatus paymentStatus;
 
     List<OrderItemRequestDto> OrderItemRequestDto;
 }

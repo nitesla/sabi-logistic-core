@@ -37,5 +37,6 @@ public class TripRequestDto {
 
     private LocalDateTime assignedDate;
     private LocalDateTime expiredTime;
+    private String additionalInfo;
 
 }

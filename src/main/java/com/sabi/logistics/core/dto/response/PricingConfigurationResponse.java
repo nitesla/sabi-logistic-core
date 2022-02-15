@@ -1,5 +1,6 @@
 package com.sabi.logistics.core.dto.response;
 
+import com.sabi.logistics.core.enums.DynamicType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -38,4 +39,6 @@ public class PricingConfigurationResponse {
     private Set<String> destinationLocations;
 
     private List<PricingItemsResponse> pricingItems;
+
+    private DynamicType dynamicType;
 }

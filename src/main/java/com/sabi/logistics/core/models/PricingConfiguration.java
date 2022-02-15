@@ -1,6 +1,7 @@
 package com.sabi.logistics.core.models;
 
 import com.sabi.framework.models.CoreEntity;
+import com.sabi.logistics.core.enums.DynamicType;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -28,4 +29,5 @@ public class PricingConfiguration extends CoreEntity {
 
     private String startingLocation;
     private String destinationLocations;
+    private DynamicType dynamicType;
 }

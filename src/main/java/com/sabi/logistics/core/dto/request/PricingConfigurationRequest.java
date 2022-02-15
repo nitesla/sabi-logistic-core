@@ -1,5 +1,6 @@
 package com.sabi.logistics.core.dto.request;
 
+import com.sabi.logistics.core.enums.DynamicType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -40,4 +41,6 @@ public class PricingConfigurationRequest {
     private Long departureStateId;
     private String startingLocation;
     private Set<String> destinationLocations;
+
+    private DynamicType dynamicType;
 }
