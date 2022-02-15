@@ -1,6 +1,5 @@
 package com.sabi.logistics.core.dto.request;
 
-import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -54,6 +53,6 @@ public class OrderRequestDto {
     private Integer totalQuantity;
 
     private Double tax;
-    private PaymentStatus paymentStatus;
+    private String paymentStatus;
 
 }

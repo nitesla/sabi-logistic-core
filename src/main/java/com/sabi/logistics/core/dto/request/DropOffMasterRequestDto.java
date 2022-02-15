@@ -1,8 +1,6 @@
 package com.sabi.logistics.core.dto.request;
 
 
-import com.sabi.logistics.core.enums.PaidStatus;
-import com.sabi.logistics.core.enums.ReturnStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -38,8 +36,8 @@ public class DropOffMasterRequestDto {
     private LocalDateTime driverArriverTime;
     private String deliveryCode;
     private Boolean finalDropOff;
-    private ReturnStatus returnStatus;
-    private PaidStatus paidStatus;
+    private String returnStatus;
+    private String paidStatus;
 
     private List<DropOffItemRequestDto> dropOffItem;
 }
