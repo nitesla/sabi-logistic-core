@@ -20,7 +20,7 @@ public class DropOff extends CoreEntity {
     private long tripRequestId;
     private BigDecimal totalAmount;
     private BigDecimal amountCollected;
-    private int qty;
+    private Long qty;
     private int qtyReturned;
     private int qtyDelivered;
     private long orderId;
