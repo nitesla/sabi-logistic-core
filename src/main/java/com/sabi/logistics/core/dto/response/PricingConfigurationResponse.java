@@ -26,6 +26,7 @@ public class PricingConfigurationResponse {
     private BigDecimal pricePerDistance;
     private BigDecimal pricePerTime;
     private Boolean hasPreferentialPricing;
+    private BigDecimal preferentialPrice;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
     private Boolean isActive;
@@ -35,7 +36,7 @@ public class PricingConfigurationResponse {
     private Long departureStateId;
     private String stateName;
     private String departureStateName;
-    private String startingLocation;
+    private Set<String> startingLocations;
     private Set<String> destinationLocations;
 
     private List<PricingItemsResponse> pricingItems;
