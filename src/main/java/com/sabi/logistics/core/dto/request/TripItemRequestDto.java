@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class TripItemRequestDto {
     private Long id;
-    private Long thirdPartyProductId;
+    private String thirdPartyProductId;
     private Long tripRequestId;
     private String productName;
     private Integer qty;

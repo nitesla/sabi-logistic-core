@@ -30,7 +30,7 @@ public class OrderItemResponseDto {
     private Integer length;
     private Long wareHouseId;
     private String wareHouseName;
-    private Long thirdPartyProductId;
+    private String thirdPartyProductId;
     private Long inventoryId;
     private String customerName;
     private String customerPhone;

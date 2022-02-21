@@ -20,7 +20,7 @@ public class DropOffItem extends CoreEntity {
     private BigDecimal amountCollected;
     private int qtyGoodsReturned;
     private int qtyGoodsDelivered;
-    private long thirdPartyProductId;
+    private String thirdPartyProductId;
     private String productName;
     private String status;
     private LocalDateTime deliveryDate;

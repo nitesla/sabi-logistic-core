@@ -28,8 +28,9 @@ public class OrderItem extends CoreEntity {
     private int length;
     private long orderId;
     private long wareHouseId;
-    private long thirdPartyProductId;
+    private String thirdPartyProductId;
     private Long inventoryId;
+    private long thirdPartyOrderId;
 
     private BigDecimal unitPrice;
 
