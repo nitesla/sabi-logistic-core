@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class TripItemResponseDto {
     private Long id;
-    private long thirdPartyProductId;
+    private String thirdPartyProductId;
     private long tripRequestId;
     private String productName;
     private int qty;

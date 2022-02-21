@@ -20,7 +20,7 @@ public class DropOffItemResponseDto {
     private BigDecimal amountCollected;
     private Integer qtyGoodsReturned;
     private Integer qtyGoodsDelivered;
-    private Long thirdPartyProductId;
+    private String thirdPartyProductId;
     private String productName;
     private String status;
     private LocalDateTime deliveryDate;

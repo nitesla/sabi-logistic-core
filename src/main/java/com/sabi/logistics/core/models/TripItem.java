@@ -13,7 +13,7 @@ import javax.persistence.Entity;
 @Entity
 public class TripItem extends CoreEntity {
 
-    private long thirdPartyProductId;
+    private String thirdPartyProductId;
     private long tripRequestId;
     private String productName;
     private int qty;

@@ -30,9 +30,10 @@ public class Order extends CoreEntity {
     @JsonProperty("QRCode")
     private String qrCode;
     private double totalAmount;
-    private int totalQuantity;
+    private Long totalQuantity;
     private double tax;
     private String paymentStatus;
+    private Long thirdPartyOrderId;
     
 
 }
