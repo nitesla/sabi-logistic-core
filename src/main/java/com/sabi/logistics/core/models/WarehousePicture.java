@@ -16,7 +16,6 @@ public class WarehousePicture extends CoreEntity {
 
 
     private Long warehouseId;
-    private String pictureType;
     private String image;
 
 }

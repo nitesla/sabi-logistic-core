@@ -18,7 +18,6 @@ public class WarehousePictureResponseDto {
 
     private Long id;
     private Long warehouseId;
-    private String pictureType;
     private String image;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
