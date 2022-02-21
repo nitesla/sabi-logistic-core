@@ -1,5 +1,6 @@
 package com.sabi.logistics.core.dto.response;
 
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,15 +14,12 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class TripRequestResponseDto {
+public class WarehousePictureResponseDto {
+
     private Long id;
-    private Long tripRequestId;
-    private String status;
-    private Long partnerId;
-    private String partnerName;
-    private LocalDateTime responseDate;
-    private String rejectReason;
-    private String additionalInfo;
+    private Long warehouseId;
+    private String pictureType;
+    private String image;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
     private Long createdBy;

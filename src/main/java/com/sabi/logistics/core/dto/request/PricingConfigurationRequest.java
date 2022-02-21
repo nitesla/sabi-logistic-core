@@ -1,5 +1,6 @@
 package com.sabi.logistics.core.dto.request;
 
+import com.sabi.logistics.core.enums.DynamicType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -36,8 +37,11 @@ public class PricingConfigurationRequest {
     @DecimalMin(message = "Price per time can not be negative values", value = "0.0")
     private BigDecimal pricePerTime;
     private Boolean hasPreferentialPricing;
+    private BigDecimal preferentialPrice;
     private String tripType;
     private Long departureStateId;
-    private String startingLocation;
+    private Set<String> startingLocations;
     private Set<String> destinationLocations;
+
+    private DynamicType dynamicType;
 }

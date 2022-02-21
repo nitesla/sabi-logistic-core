@@ -8,20 +8,16 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-@Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class TripRequestResponseDto {
+public class RejectReasonResponseDto {
+
     private Long id;
-    private Long tripRequestId;
-    private String status;
-    private Long partnerId;
-    private String partnerName;
-    private LocalDateTime responseDate;
-    private String rejectReason;
-    private String additionalInfo;
+    private String name;
+    private Boolean additionalInfo;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
     private Long createdBy;

@@ -29,12 +29,6 @@ public class OrderOrderItemDto {
 
     private LocalDateTime expectedDeliveryDate;
 
-//    @NotBlank(message = "BarCode can not be blank")
-//    private String barCode;
-//
-//    @NotBlank(message = "QRcode can not be blank")
-//    private String QRcode;
-
     @NotNull(message = "Total Amount can not be empty")
     @DecimalMin(value = "0.0", message = "Total Amount can not be less than 0.0")
     private Double totalAmount;

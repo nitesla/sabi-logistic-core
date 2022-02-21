@@ -56,6 +56,10 @@ public class TripMasterResponseDto {
     private LocalDateTime driverArriverTime;
     private String driverAssistantPhone;
     private String driverPhone;
+    private String additionalInfo;
+
+    private LocalDateTime assignedDate;
+    private LocalDateTime expiredTime;
 
 
 }

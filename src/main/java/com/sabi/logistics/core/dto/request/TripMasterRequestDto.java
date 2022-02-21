@@ -36,6 +36,10 @@ public class TripMasterRequestDto {
     private String contactPhone;
     private String contactEmail;
 
+    private LocalDateTime assignedDate;
+    private LocalDateTime expiredTime;
+    private String additionalInfo;
+
     private List<DropOffMasterRequestDto> dropOff;
 
 
