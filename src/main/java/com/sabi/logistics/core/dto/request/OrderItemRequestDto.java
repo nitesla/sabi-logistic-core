@@ -53,7 +53,7 @@ public class OrderItemRequestDto {
     @Min(message = "WareHouse Id can not be less than 1", value = 1)
     private Long wareHouseId;
 
-    private Long thirdPartyProductId;
+    private String thirdPartyProductId;
 
     private BigDecimal unitPrice;
 

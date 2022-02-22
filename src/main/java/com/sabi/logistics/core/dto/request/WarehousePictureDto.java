@@ -8,6 +8,5 @@ public class WarehousePictureDto {
 
     private Long id;
     private Long warehouseId;
-    private String pictureType;
     private String image;
 }
