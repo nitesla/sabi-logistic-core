@@ -35,6 +35,7 @@ public class TripResponseDto {
     private String driverName;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
+    private LocalDateTime currentSystemTime;
     private Long driverAssistantId;
     private String driverAssistantName;
     private String barCode;

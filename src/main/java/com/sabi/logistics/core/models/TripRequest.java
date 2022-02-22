@@ -19,7 +19,6 @@ import java.time.LocalDateTime;
 @Entity
 public class TripRequest extends CoreEntity {
 
-    @Column(nullable = false)
     private Long partnerId;
     private String referenceNo;
     private String status;
