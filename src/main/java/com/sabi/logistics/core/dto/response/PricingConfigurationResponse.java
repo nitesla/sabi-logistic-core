@@ -20,6 +20,7 @@ public class PricingConfigurationResponse {
     private Long partnerId;
     private String routeType;
     private Long arrivalStateId;
+    private String arrivalStateName;
     private String locationPreference;
     private BigDecimal pricePerParameter;
     private BigDecimal pricePerWeight;
@@ -34,11 +35,11 @@ public class PricingConfigurationResponse {
     private Long updatedBy;
     private String tripType;
     private Long departureStateId;
-    private String stateName;
     private String departureStateName;
     private Set<String> startingLocations;
+    private Set<String> startingLocationNames;
     private Set<String> destinationLocations;
-
+    private Set<String> destinationLocationNames;
     private List<PricingItemsResponse> pricingItems;
 
     private DynamicType dynamicType;
