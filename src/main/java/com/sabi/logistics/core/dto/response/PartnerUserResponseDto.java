@@ -20,11 +20,13 @@ public class PartnerUserResponseDto {
     private String middleName;
     private String email;
     private String phone;
+    private String image;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
     private Long createdBy;
     private Long updatedBy;
     private Boolean isActive;
     private String userType;
+    private String partnerId;
 
 }

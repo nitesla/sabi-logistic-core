@@ -18,7 +18,7 @@ public class PartnerUser extends CoreEntity {
     private long partnerId;
     private long userId;
     private String userType;
-
+    private String image;
     @Transient
     private Long loginAttempts;
     @Transient
