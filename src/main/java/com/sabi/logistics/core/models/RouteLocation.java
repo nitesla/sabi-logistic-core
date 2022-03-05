@@ -2,11 +2,10 @@ package com.sabi.logistics.core.models;
 
 import com.sabi.framework.models.CoreEntity;
 import lombok.*;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import javax.persistence.Entity;
 import javax.persistence.Transient;
-import java.math.BigDecimal;
+import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -21,4 +20,7 @@ public class RouteLocation extends CoreEntity {
 //    private BigDecimal tollRate;
     @Transient
     private String stateName;
+
+    @Transient
+    private List<TollPrices> tollPrices;
 }
