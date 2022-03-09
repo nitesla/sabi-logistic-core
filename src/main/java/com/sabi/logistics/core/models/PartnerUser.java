@@ -46,6 +46,9 @@ public class PartnerUser extends CoreEntity {
     @Transient
     private String phone;
 
+    @Transient
+    private String photo;
+
 
 
 
