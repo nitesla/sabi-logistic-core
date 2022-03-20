@@ -53,6 +53,7 @@ public class OrderRequestDto {
     private Integer totalQuantity;
 
     private Double tax;
+    @NotBlank(message = "paymentStatus can not be empty")
     private String paymentStatus;
 
 }

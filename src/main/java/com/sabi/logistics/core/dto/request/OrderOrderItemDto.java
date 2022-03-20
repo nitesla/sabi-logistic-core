@@ -38,6 +38,7 @@ public class OrderOrderItemDto {
     private Integer totalQuantity;
 
     private Double tax;
+    @NotBlank(message = "paymentStatus can not be empty")
     private String paymentStatus;
 
     List<OrderItemRequestDto> OrderItemRequestDto;
