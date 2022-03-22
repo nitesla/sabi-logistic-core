@@ -18,10 +18,6 @@ import java.time.LocalDateTime;
 public class OrderRequestDto {
     private Long id;
 
-//    @NotNull(message = "Reference No can not be blank")
-//    @Min(message = "Reference No can not be less than 0", value = 1)
-//    private String referenceNo;
-
     @NotBlank(message = "Delivery Status can not be blank")
     private String deliveryStatus;
 
@@ -37,12 +33,6 @@ public class OrderRequestDto {
     private LocalDateTime dateDelivered;
 
     private LocalDateTime expectedDeliveryDate;
-
-//    @NotBlank(message = "BarCode can not be blank")
-//    private String barCode;
-//
-//    @NotBlank(message = "QRcode can not be blank")
-//    private String QRcode;
 
     @NotNull(message = "Total Amount can not be empty")
     @DecimalMin(value = "0.0", message = "Total Amount can not be less than 0.0")

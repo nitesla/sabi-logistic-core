@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -55,7 +56,11 @@ public class OrderItemRequestDto {
 
     private String thirdPartyProductId;
 
+    @NotNull(message = "unitPrice can not be empty")
+    @DecimalMin(value = "0.0", message = "unitPrice can not be less than 0.0")
     private BigDecimal unitPrice;
 
+    @NotNull(message = "Total Price can not be empty")
+    @DecimalMin(value = "0.0", message = "Total Price can not be less than 0.0")
     private BigDecimal totalPrice;
 }
