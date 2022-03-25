@@ -1,11 +1,14 @@
 package com.sabi.logistics.core.dto.response;
 
+import com.sabi.logistics.core.models.WarehouseProduct;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -29,6 +32,7 @@ public class WarehouseResponseDto {
     private Long stateId;
     private String stateName;
     private Long userId;
+    private List<WarehouseProduct> productInfo;
     private String wareHouseManager;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;

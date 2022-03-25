@@ -4,6 +4,9 @@ import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.Transient;
+import java.math.BigDecimal;
+import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -24,6 +27,8 @@ public class Warehouse extends CoreEntity {
     private String longitude;
     private String name;
     private long userId;
+    @Transient
+    private List<WarehouseProduct> productInfo;
     private String latitude;
     private String owner;
     private double totalStock;
