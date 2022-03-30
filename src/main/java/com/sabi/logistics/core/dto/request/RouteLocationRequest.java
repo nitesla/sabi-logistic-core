@@ -18,8 +18,16 @@ public class RouteLocationRequest {
     private Long id;
     @NotNull(message = "State id is required")
     private Long stateId;
+
+    @NotNull(message = "country id is required")
+    private Long countryId;
     @NotBlank(message = "Name is required")
     private String name;
+
+    @NotBlank(message = "stateName is required")
+    private String stateName;
+    @NotBlank(message = "countryName is required")
+    private String countryName;
 //    @NotBlank(message = "HasToll is required")
     private Boolean hasToll;
 //    @NotBlank(message = "TollRate is required")

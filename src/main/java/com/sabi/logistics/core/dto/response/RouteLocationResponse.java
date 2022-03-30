@@ -14,6 +14,8 @@ import java.time.LocalDateTime;
 public class RouteLocationResponse {
     private Long id;
     private Long stateId;
+    private Long countryId;
+    private String countryName;
     private String name;
     private Boolean hasToll;
 //    private BigDecimal tollRate;

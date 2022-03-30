@@ -22,6 +22,16 @@ public class WarehouseRequestDto {
     @NotNull(message = "lga id can not be blank")
     @Min(message = "Lga id can not be less than 0", value = 1L)
     private Long lgaId;
+    @Min(message = "State id can not be less than 0", value = 1L)
+    private Long stateId;
+    @Min(message = "Country id can not be less than 0", value = 1L)
+    private Long countryId;
+    @NotBlank(message = "Lga can not be blank")
+    private String lgaName;
+    @NotBlank(message = "State can not be blank")
+    private String stateName;
+    @NotBlank(message = "Country can not be blank")
+    private String countryName;
     @NotBlank(message = "Address can not be blank")
     private String address;
     @NotBlank(message = "Contact person can not be empty")

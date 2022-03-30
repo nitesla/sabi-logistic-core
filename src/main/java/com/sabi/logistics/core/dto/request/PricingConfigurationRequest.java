@@ -22,6 +22,7 @@ public class PricingConfigurationRequest {
 //    @NotBlank(message = "Route type is required")
     private String routeType;
     private Long arrivalStateId;
+    private Long arrivalCountryId;
 //    @NotBlank(message = "Location Preference is required")
     private String locationPreference;
 //    @NotNull(message = "Price per parameter is required")
@@ -42,6 +43,8 @@ public class PricingConfigurationRequest {
     private Long departureStateId;
     private Set<String> startingLocations;
     private Set<String> destinationLocations;
+    private String arrivalStateName;
+    private String arrivalCountryName;
 
     private DynamicType dynamicType;
 }

@@ -19,6 +19,7 @@ public class PricingConfiguration extends CoreEntity {
     private Long partnerId;
     private String routeType;
     private Long arrivalStateId;
+    private Long arrivalCountryId;
     private String locationPreference;
     private BigDecimal pricePerParameter;
     private BigDecimal pricePerWeight;
@@ -33,8 +34,10 @@ public class PricingConfiguration extends CoreEntity {
     private String startingLocations;
     private String destinationLocations;
     private DynamicType dynamicType;
-    @Transient
+
     private String arrivalStateName;
+
+    private String arrivalCountryName;
     @Transient
     private String departureStateName;
     @Transient

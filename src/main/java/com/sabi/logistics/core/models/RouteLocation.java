@@ -15,11 +15,13 @@ import java.util.List;
 @Entity
 public class RouteLocation extends CoreEntity {
     private Long stateId;
+    private Long countryId;
     private String name;
     private Boolean hasToll;
 //    private BigDecimal tollRate;
-    @Transient
     private String stateName;
+
+    private String countryName;
 
     @Transient
     private List<TollPrices> tollPrices;

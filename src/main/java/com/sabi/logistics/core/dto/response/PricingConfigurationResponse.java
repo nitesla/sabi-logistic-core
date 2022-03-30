@@ -20,7 +20,9 @@ public class PricingConfigurationResponse {
     private Long partnerId;
     private String routeType;
     private Long arrivalStateId;
+    private Long arrivalCountryId;
     private String arrivalStateName;
+    private String arrivalCountryName;
     private String locationPreference;
     private BigDecimal pricePerParameter;
     private BigDecimal pricePerWeight;

@@ -30,7 +30,9 @@ public class WarehouseResponseDto {
     private String name;
     private String lgaName;
     private Long stateId;
+    private Long countryId;
     private String stateName;
+    private String countryName;
     private Long userId;
     private List<WarehouseProduct> productInfo;
     private String wareHouseManager;

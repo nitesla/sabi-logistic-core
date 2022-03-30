@@ -17,6 +17,8 @@ public class PartnerLocation extends CoreEntity {
 
     private Long partnerId;
     private Long stateId;
+    private Long countryId;
+    private String countryName;
     private int wareHouses;
     private String stateName;
 }

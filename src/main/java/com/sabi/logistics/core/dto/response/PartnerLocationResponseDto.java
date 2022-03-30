@@ -25,4 +25,6 @@ public class PartnerLocationResponseDto {
     private Long createdBy;
     private Long updatedBy;
     private String stateName;
+    private Long countryId;
+    private String countryName;
 }

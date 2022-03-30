@@ -20,6 +20,8 @@ public class Partner extends CoreEntity {
     private long userId;
     private String name;
     private Long lgaId;
+    private Long stateId;
+    private Long countryId;
     private String address;
     private String phone;
     private boolean isRegistered;
@@ -32,11 +34,11 @@ public class Partner extends CoreEntity {
     private String registrationTokenExpiration;
     private Long supplierId;
 
-    @Transient
-    private String lga;
+    private String lgaName;
 
-    @Transient
-    private String state;
+    private String stateName;
+
+    private String countryName;
 
 
 }

@@ -16,7 +16,6 @@ public class PartnerBank extends CoreEntity {
     private Long partnerId;
     private Long bankId;
     private String accountNumber;
-    @Transient
     private String bankName;
     private Boolean isDefault;
 }

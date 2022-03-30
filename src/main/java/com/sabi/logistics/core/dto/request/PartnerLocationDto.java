@@ -14,5 +14,8 @@ public class PartnerLocationDto {
     private Long id;
     private Long partnerId;
     private Long stateId;
+    private Long countryId;
+    private String stateName;
+    private String countryName;
     private int wareHouses;
 }
