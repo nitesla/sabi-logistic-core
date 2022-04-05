@@ -20,4 +20,11 @@ public class WarehouseProductResponseDto {
     private LocalDateTime updatedDate;
     private Long createdBy;
     private Long updatedBy;
+    /**
+     Description: Add 'image' and 'category' properties to WarehouseProduct
+     Date:       4/5/2022
+     Author:     Afam Okonkwo
+     */
+    private String image;
+    private String category;
 }
