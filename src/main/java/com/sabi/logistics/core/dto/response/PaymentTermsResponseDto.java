@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Transient;
 import java.time.LocalDateTime;
 
 @AllArgsConstructor
@@ -21,6 +22,13 @@ public class PaymentTermsResponseDto {
     private Long partnerAssetTypeId;
 
     private String partnerAssetTypeName;
+
+    /**
+     Description: Includes 'partnerName' property to PaymentTerms
+     Date:       06/04/2022
+     Author:     Afam Okonkwo
+     */
+    private String partnerName;
 
     private Integer days;
 
