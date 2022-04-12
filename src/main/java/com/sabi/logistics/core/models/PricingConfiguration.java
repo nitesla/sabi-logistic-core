@@ -38,7 +38,7 @@ public class PricingConfiguration extends CoreEntity {
     private String arrivalStateName;
 
     private String arrivalCountryName;
-    @Transient
+
     private String departureStateName;
     @Transient
     private Set<String> startingLocationNames;

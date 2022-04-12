@@ -45,6 +45,7 @@ public class PricingConfigurationRequest {
     private Set<String> destinationLocations;
     private String arrivalStateName;
     private String arrivalCountryName;
+    private String departureStateName;
 
     private DynamicType dynamicType;
 }
