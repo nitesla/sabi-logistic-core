@@ -15,6 +15,12 @@ import java.time.LocalDateTime;
 public class BrandResponseDto {
     private long id;
     private String name;
+    /**
+    Description: Add image properties to Brand
+    Date:       4/5/2022
+    Author:     Afam Okonkwo
+     */
+    private String image;
     private boolean isActive;
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;

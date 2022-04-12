@@ -22,4 +22,11 @@ public class WareHouseUserResponseDto {
     private String phone;
     private Long roleId;
     private String roleName;
+    /**
+     Description: Add 'image' and 'category' properties to WarehouseProduct
+     Date:       4/5/2022
+     Author:     Afam Okonkwo
+     */
+    private String image;
+    private String category;
 }

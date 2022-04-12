@@ -13,4 +13,11 @@ import javax.persistence.Entity;
 @Builder
 public class Brand extends CoreEntity {
     private String name;
+
+    /*
+    Description: Add image properties to Brand
+    Date:       4/5/2022
+    Author:     Afam Okonkwo
+     */
+    private String image;
 }

@@ -17,4 +17,12 @@ public class PaymentTerms extends CoreEntity {
     private Integer days;
     @Transient
     private String partnerAssetTypeName;
+
+    /**
+     Description: Includes 'partnerName' property to PaymentTerms
+     Date:       06/04/2022
+     Author:     Afam Okonkwo
+     */
+    @Transient
+    private String partnerName;
 }
