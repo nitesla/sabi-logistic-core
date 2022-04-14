@@ -21,6 +21,7 @@ public class PricingConfigMasterRequest {
     private Long partnerId;
     private String routeType;
     private Long arrivalStateId;
+    private Long arrivalCountryId;
     private String locationPreference;
     @DecimalMin(message = "Price per parameter can not be negative values", value = "0.0")
     private BigDecimal pricePerParameter;
@@ -39,6 +40,8 @@ public class PricingConfigMasterRequest {
 
     private Set<String> startingLocations;
     private Set<String> destinationLocations;
-
+    private String arrivalStateName;
+    private String arrivalCountryName;
+    private String departureStateName;
     private DynamicType dynamicType;
 }
