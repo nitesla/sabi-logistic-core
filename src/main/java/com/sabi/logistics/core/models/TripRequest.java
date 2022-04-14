@@ -67,4 +67,6 @@ public class TripRequest extends CoreEntity {
     private String driverAssistantName;
     @Transient
     private String driverAssistantPhone;
+    @Transient
+    private Number totalQtyPickedUp;
 }

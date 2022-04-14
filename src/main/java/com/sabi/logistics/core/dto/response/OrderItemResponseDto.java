@@ -15,7 +15,12 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@JsonInclude(JsonInclude.Include.NON_NULL)
+/**
+ Description: disables JsonInclude to return null values for the qa and frontend to observe
+ Date:       14/04/2022
+ Author:     Afam Okonkwo
+ */
+//@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderItemResponseDto {
 
     private Long id;

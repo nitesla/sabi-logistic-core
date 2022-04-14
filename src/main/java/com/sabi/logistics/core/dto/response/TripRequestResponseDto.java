@@ -26,5 +26,6 @@ public class TripRequestResponseDto {
     private LocalDateTime updatedDate;
     private Long createdBy;
     private Long updatedBy;
+    private Number totalQtyPickedUp;
     private Boolean isActive;
 }
