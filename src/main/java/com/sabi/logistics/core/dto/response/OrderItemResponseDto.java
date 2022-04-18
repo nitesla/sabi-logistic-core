@@ -2,6 +2,7 @@ package com.sabi.logistics.core.dto.response;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.sabi.logistics.core.enums.VerificationStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -40,4 +41,7 @@ public class OrderItemResponseDto {
     private LocalDateTime acceptedDate;
     private LocalDateTime createdDate;
     private String referenceNo;
+
+    private String paymentReference;
+    private VerificationStatus verificationStatus;
 }

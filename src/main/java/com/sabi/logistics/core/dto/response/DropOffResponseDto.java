@@ -1,6 +1,8 @@
 package com.sabi.logistics.core.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.sabi.logistics.core.enums.PaymentMode;
+import com.sabi.logistics.core.enums.PaymentStatus;
 import com.sabi.logistics.core.models.DropOffItem;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -39,10 +41,12 @@ public class DropOffResponseDto {
     private LocalDateTime deliveryDate;
     private String customerName;
     private String customerPhone;
-    private String paymentStatus;
+    private PaymentStatus paymentStatus;
     private LocalDateTime driverArriverTime;
     private String deliveryCode;
     private Boolean finalDropOff;
     private String returnStatus;
     private String paidStatus;
+    private PaymentMode paymentMode;
+    private String paymentVerificationPicture;
 }

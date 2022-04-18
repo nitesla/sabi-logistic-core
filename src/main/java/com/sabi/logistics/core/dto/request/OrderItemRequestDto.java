@@ -1,5 +1,6 @@
 package com.sabi.logistics.core.dto.request;
 
+import com.sabi.logistics.core.enums.VerificationStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -63,4 +64,8 @@ public class OrderItemRequestDto {
     @NotNull(message = "Total Price can not be empty")
     @DecimalMin(value = "0.0", message = "Total Price can not be less than 0.0")
     private BigDecimal totalPrice;
+
+    private String paymentReference;
+
+    private VerificationStatus verificationStatus;
 }

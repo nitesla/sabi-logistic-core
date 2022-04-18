@@ -1,11 +1,10 @@
 package com.sabi.logistics.core.models;
 
 import com.sabi.framework.models.CoreEntity;
+import com.sabi.logistics.core.enums.VerificationStatus;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -43,6 +42,10 @@ public class OrderItem extends CoreEntity {
     private String deliveryAddress;
     @Transient
     private LocalDateTime acceptedDate;
+
+    private String paymentReference;
+    @Enumerated(EnumType.STRING)
+    private VerificationStatus verificationStatus;
 
 
 }

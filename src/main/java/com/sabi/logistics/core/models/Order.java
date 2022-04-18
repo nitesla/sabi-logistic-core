@@ -3,9 +3,12 @@ package com.sabi.logistics.core.models;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 import com.sabi.framework.models.CoreEntity;
+import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
 
@@ -32,8 +35,10 @@ public class Order extends CoreEntity {
     private double totalAmount;
     private Long totalQuantity;
     private double tax;
-    private String paymentStatus;
+    @Enumerated(EnumType.STRING)
+    private PaymentStatus paymentStatus;
     private Long thirdPartyOrderId;
+    private String orderNumber;
     
 
 }

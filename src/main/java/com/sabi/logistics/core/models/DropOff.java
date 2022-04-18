@@ -1,9 +1,13 @@
 package com.sabi.logistics.core.models;
 
 import com.sabi.framework.models.CoreEntity;
+import com.sabi.logistics.core.enums.PaymentMode;
+import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Transient;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -42,7 +46,8 @@ public class DropOff extends CoreEntity {
     @Transient
     private String customerPhone;
 
-    private String paymentStatus;
+    @Enumerated(EnumType.STRING)
+    private PaymentStatus paymentStatus;
 
     private String deliveryCode;
 
@@ -51,6 +56,9 @@ public class DropOff extends CoreEntity {
     private String returnStatus;
 
     private String paidStatus;
+    @Enumerated(EnumType.STRING)
+    private PaymentMode paymentMode;
+    private String paymentVerificationPicture;
 
     @Transient
     private List<DropOffItem> dropOffItem;

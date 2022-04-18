@@ -1,5 +1,6 @@
 package com.sabi.logistics.core.dto.request;
 
+import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.Data;
 
 import javax.validation.constraints.DecimalMin;
@@ -38,8 +39,11 @@ public class OrderOrderItemDto {
     private Integer totalQuantity;
 
     private Double tax;
-    @NotBlank(message = "paymentStatus can not be empty")
-    private String paymentStatus;
+
+    private PaymentStatus paymentStatus;
+
+    @NotBlank(message = "Order Number can not be empty")
+    private String orderNumber;
 
     List<OrderItemRequestDto> OrderItemRequestDto;
 }

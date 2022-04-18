@@ -1,6 +1,7 @@
 package com.sabi.logistics.core.dto.request;
 
 
+import com.sabi.logistics.core.enums.PaymentMode;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -38,6 +39,8 @@ public class DropOffMasterRequestDto {
     private Boolean finalDropOff;
     private String returnStatus;
     private String paidStatus;
+    private PaymentMode paymentMode;
+    private String paymentVerificationPicture;
 
     private List<DropOffItemRequestDto> dropOffItem;
 }
