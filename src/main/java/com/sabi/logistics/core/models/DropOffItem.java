@@ -42,5 +42,6 @@ public class DropOffItem extends CoreEntity {
     private String referenceNo;
     @Transient
     private double tax;
+    private String transactionReference;
 
 }

@@ -3,6 +3,7 @@ package com.sabi.logistics.core.dto.response;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
+import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -29,5 +30,6 @@ public class OrderOrderItemResponseDto {
     private LocalDateTime createdDate;
     private List<OrderItemResponseDto> orderItem;
     private double tax;
-    private String paymentStatus;
+    private PaymentStatus paymentStatus;
+    private String orderNumber;
 }

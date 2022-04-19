@@ -31,4 +31,5 @@ public class DropOffItemRequestDto {
     private String thirdPartyProductId;
     private String productName;
     private BigDecimal outstandingAmount;
+    private String transactionReference;
 }
