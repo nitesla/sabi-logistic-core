@@ -67,6 +67,11 @@ public class TripRequest extends CoreEntity {
     private String driverAssistantName;
     @Transient
     private String driverAssistantPhone;
+    /**
+     Description: Includes 'partnerAssetTypeName' as transient field-non persistable
+     Date:       19/04/2022
+     Author:     Afam Okonkwo
+     */
     @Transient
-    private Number totalQtyPickedUp;
+    private  String partnerAssetTypeName;
 }
