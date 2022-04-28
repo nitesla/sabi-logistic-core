@@ -17,6 +17,7 @@ public class TripRequestResponseDto {
     private Long id;
     private Long tripRequestId;
     private String status;
+    private long driverId;
     private Long partnerId;
     private String partnerName;
     private LocalDateTime responseDate;

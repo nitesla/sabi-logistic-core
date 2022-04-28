@@ -18,6 +18,8 @@ public class TripRequestResponse extends CoreEntity {
     @Column(nullable = false)
     private String status;
     private long partnerId;
+    private String driverStatus;
+    private long driverId;
     private long tripRequestId;
     private LocalDateTime responseDate;
     private String rejectReason;
