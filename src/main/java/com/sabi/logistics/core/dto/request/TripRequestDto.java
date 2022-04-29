@@ -18,6 +18,7 @@ public class TripRequestDto {
     private Long partnerAssetId;
     @NotBlank(message = "Status can not be blank")
     private String status;
+    private String driverStatus;
     private String deliveryStatus;
     private Long driverAssistantUserId;
     private Long driverUserId;

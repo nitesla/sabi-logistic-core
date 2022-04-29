@@ -28,6 +28,7 @@ public class TripResponseDto {
     private String partnerName;
     private String referenceNo;
     private String status;
+    private String driverStatus;
     private Long partnerAssetId;
     private String partnerAssetName;
     private String deliveryStatus;
