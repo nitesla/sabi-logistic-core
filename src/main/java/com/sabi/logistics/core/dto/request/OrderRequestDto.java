@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.Valid;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -48,6 +49,7 @@ public class OrderRequestDto {
 
     private Double tax;
 
+    @NotNull(message = "Payment status cannot be empty")
     private PaymentStatus paymentStatus;
 
 }
