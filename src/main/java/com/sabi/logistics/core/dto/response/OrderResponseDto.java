@@ -4,6 +4,7 @@ package com.sabi.logistics.core.dto.response;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
+import com.sabi.logistics.core.enums.Party;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import com.sabi.logistics.core.models.OrderItem;
 import lombok.AllArgsConstructor;
@@ -41,6 +42,9 @@ public class OrderResponseDto {
     private double tax;
     private PaymentStatus paymentStatus;
     private String orderNumber;
+    private Party sourceparty;
+    private Party destinationparty;
+    private Boolean hasMultipleDeliveryAddress;
 
 
 }

@@ -68,4 +68,6 @@ public class OrderItemRequestDto {
     private String paymentReference;
 
     private VerificationStatus verificationStatus;
+
+    private String deliveryAddress;
 }

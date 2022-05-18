@@ -1,12 +1,12 @@
 package com.sabi.logistics.core.dto.request;
 
+import com.sabi.logistics.core.enums.Party;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.Valid;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -51,5 +51,9 @@ public class OrderRequestDto {
 
     @NotNull(message = "Payment status cannot be empty")
     private PaymentStatus paymentStatus;
+
+    private Party sourceparty;
+    private Party destinationparty;
+    private Boolean hasMultipleDeliveryAddress;
 
 }

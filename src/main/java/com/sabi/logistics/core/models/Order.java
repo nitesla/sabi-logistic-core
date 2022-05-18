@@ -3,6 +3,7 @@ package com.sabi.logistics.core.models;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 import com.sabi.framework.models.CoreEntity;
+import com.sabi.logistics.core.enums.Party;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.*;
 
@@ -29,6 +30,11 @@ public class Order extends CoreEntity {
     private LocalDateTime dateDelivered;
     private LocalDateTime expectedDeliveryDate;
     private String barCode;
+    private Boolean hasMultipleDeliveryAddress;
+    @Enumerated(EnumType.STRING)
+    private Party sourceparty;
+    @Enumerated(EnumType.STRING)
+    private Party destinationparty;
     @SerializedName("QRCode")
     @JsonProperty("QRCode")
     private String qrCode;
