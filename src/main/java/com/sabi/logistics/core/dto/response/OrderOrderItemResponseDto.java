@@ -33,7 +33,7 @@ public class OrderOrderItemResponseDto {
     private double tax;
     private PaymentStatus paymentStatus;
     private String orderNumber;
-    private Party sourceparty;
-    private Party destinationparty;
+    private Party sourceParty;
+    private Party destinationParty;
     private Boolean hasMultipleDeliveryAddress;
 }

@@ -32,9 +32,9 @@ public class Order extends CoreEntity {
     private String barCode;
     private Boolean hasMultipleDeliveryAddress;
     @Enumerated(EnumType.STRING)
-    private Party sourceparty;
+    private Party sourceParty;
     @Enumerated(EnumType.STRING)
-    private Party destinationparty;
+    private Party destinationParty;
     @SerializedName("QRCode")
     @JsonProperty("QRCode")
     private String qrCode;

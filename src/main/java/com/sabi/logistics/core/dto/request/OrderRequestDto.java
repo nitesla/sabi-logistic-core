@@ -52,8 +52,8 @@ public class OrderRequestDto {
     @NotNull(message = "Payment status cannot be empty")
     private PaymentStatus paymentStatus;
 
-    private Party sourceparty;
-    private Party destinationparty;
+    private Party sourceParty;
+    private Party destinationParty;
     private Boolean hasMultipleDeliveryAddress;
 
 }
