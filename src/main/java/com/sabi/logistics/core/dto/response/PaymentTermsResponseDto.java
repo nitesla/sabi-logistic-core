@@ -36,11 +36,10 @@ public class PaymentTermsResponseDto {
     private String partnerName;
 
     /**
-     Description: Includes 'image' and 'companyName' properties under PaymentTerms
-     Date:       14/04/2022
+     Description: Removes 'image' property from PaymentTerms
+     Date:       17/05/2022
      Author:     Afam Okonkwo
      */
-    private String image;
 
     private String companyName;
 

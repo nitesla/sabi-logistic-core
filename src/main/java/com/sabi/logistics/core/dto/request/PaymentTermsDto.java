@@ -13,11 +13,9 @@ public class PaymentTermsDto {
     private Integer days;
 
     /**
-     Description: Includes 'image' and 'companyName' properties under PaymentTerms
-     Date:       14/04/2022
+     Description: Includes 'image' property from PaymentTerms
+     Date:       17/05/2022
      Author:     Afam Okonkwo
      */
-    private String image;
-
     private String companyName;
 }
