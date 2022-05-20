@@ -36,7 +36,7 @@ public class OrderItem extends CoreEntity {
     private BigDecimal totalPrice;
     @Transient
     private String customerName;
-    @Transient
+
     private String customerPhone;
     @Transient
     private String deliveryAddress;
