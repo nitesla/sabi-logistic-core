@@ -38,5 +38,6 @@ public class DropOffItemResponseDto {
     private String driverPhone;
     private BigDecimal outstandingAmount;
     private String transactionReference;
+    private String deliveryAddress;
 
 }

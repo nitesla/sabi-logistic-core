@@ -38,7 +38,6 @@ public class OrderItem extends CoreEntity {
     private String customerName;
 
     private String customerPhone;
-    @Transient
     private String deliveryAddress;
     @Transient
     private LocalDateTime acceptedDate;

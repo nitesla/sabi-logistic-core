@@ -1,5 +1,6 @@
 package com.sabi.logistics.core.dto.request;
 
+import com.sabi.logistics.core.enums.Party;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.Data;
 
@@ -44,6 +45,10 @@ public class OrderOrderItemDto {
 
     @NotBlank(message = "Order Number can not be empty")
     private String orderNumber;
+
+    private Party sourceparty;
+    private Party destinationparty;
+    private Boolean hasMultipleDeliveryAddress;
 
     List<OrderItemRequestDto> OrderItemRequestDto;
 }
