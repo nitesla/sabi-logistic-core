@@ -32,4 +32,6 @@ public class DriverAsset extends CoreEntity {
     private String phoneNumber;
     @Transient
     private String assetType;
+    @Transient
+    private String plateNo;
 }
