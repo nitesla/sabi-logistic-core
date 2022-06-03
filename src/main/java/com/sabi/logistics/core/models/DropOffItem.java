@@ -24,20 +24,20 @@ public class DropOffItem extends CoreEntity {
     private String productName;
     private String status;
     private LocalDateTime deliveryDate;
-    private long orderItemId;
+    private long invoiceItemId;
     private Boolean finalDropOff;
     private BigDecimal totalAmount;
     private BigDecimal unitPrice;
     private BigDecimal outstandingAmount;
     @Transient
-    private String orderItemName;
+    private String invoiceItemName;
     private int qty;
     @Transient
     private String customerName;
     @Transient
     private String customerPhone;
     @Transient
-    private Long orderId;
+    private Long invoiceId;
     @Transient
     private String referenceNo;
     @Transient

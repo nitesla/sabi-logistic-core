@@ -27,7 +27,7 @@ public class DropOff extends CoreEntity {
     private Long qty;
     private int qtyReturned;
     private int qtyDelivered;
-    private long orderId;
+    private long invoiceId;
     private String phoneNo;
     private String email;
     private String deliveryAddress;

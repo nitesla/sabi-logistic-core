@@ -23,7 +23,7 @@ public class DropOffItemRequestDto {
     private LocalDateTime deliveryDate;
     @NotNull(message = "orderItemId can not be blank")
     @Min(message = "orderItemId can not be less than 1", value = 1)
-    private Long orderItemId;
+    private Long invoiceItemId;
     private Long dropOffId;
     private BigDecimal amountCollected;
     private Integer qtyGoodsReturned;
