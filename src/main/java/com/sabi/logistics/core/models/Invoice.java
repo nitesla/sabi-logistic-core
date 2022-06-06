@@ -44,7 +44,7 @@ public class Invoice extends CoreEntity {
     @Enumerated(EnumType.STRING)
     private PaymentStatus paymentStatus;
     private Long thirdPartyOrderId;
-    private String orderNumber;
+    //private String orderNumber;
     private String invoiceNumber;
     
 

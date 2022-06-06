@@ -43,9 +43,6 @@ public class InvoiceInvoiceItemDto {
 
     private PaymentStatus paymentStatus;
 
-    @NotBlank(message = "Order Number can not be empty")
-    private String orderNumber;
-
     @NotBlank(message = "Invoice Number can not be empty")
     private String invoiceNumber;
 

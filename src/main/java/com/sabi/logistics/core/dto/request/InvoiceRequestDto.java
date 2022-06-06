@@ -44,10 +44,7 @@ public class InvoiceRequestDto {
     @Min(message = "Total Quantity can not be less than 0", value = 1)
     private Integer totalQuantity;
 
-    @NotBlank(message = "Order Number can not be empty")
-    private String orderNumber;
-
-    @NotBlank(message = "Order Number can not be empty")
+    @NotBlank(message = "Invoice Number can not be empty")
     private String invoiceNumber;
 
     private Double tax;

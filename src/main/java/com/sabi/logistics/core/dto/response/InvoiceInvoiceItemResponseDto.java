@@ -32,7 +32,7 @@ public class InvoiceInvoiceItemResponseDto {
     private List<InvoiceItemResponseDto> invoiceItem;
     private double tax;
     private PaymentStatus paymentStatus;
-    private String orderNumber;
+    //private String orderNumber;
     private String invoiceNumber;
     private Party sourceParty;
     private Party destinationParty;

@@ -32,7 +32,7 @@ public class OrderOrderItemResponseDto {
     private List<OrderItemResponseDto> orderItem;
     private double tax;
     private PaymentStatus paymentStatus;
-    private String orderNumber;
+    private String invoiceNumber;
     private Party sourceParty;
     private Party destinationParty;
     private Boolean hasMultipleDeliveryAddress;
