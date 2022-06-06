@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "`Invoice`")
+@Table(name = "`Order`")
 public class Order extends CoreEntity {
 
     private String referenceNo;
@@ -44,7 +44,7 @@ public class Order extends CoreEntity {
     @Enumerated(EnumType.STRING)
     private PaymentStatus paymentStatus;
     private Long thirdPartyOrderId;
-    private String invoiceNumber;
+    private String orderNumber;
     
 
 }

@@ -45,7 +45,7 @@ public class OrderRequestDto {
     private Integer totalQuantity;
 
     @NotBlank(message = "Order Number can not be empty")
-    private String invoiceNumber;
+    private String orderNumber;
 
     private Double tax;
 
