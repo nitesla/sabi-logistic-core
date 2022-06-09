@@ -55,8 +55,10 @@ public class DropOff extends CoreEntity {
 
     private Boolean finalDropOff;
 
+    @Enumerated(EnumType.STRING)
     private ReturnStatus returnStatus;
 
+    @Enumerated(EnumType.STRING)
     private PaidStatus paidStatus;
     @Enumerated(EnumType.STRING)
     private PaymentMode paymentMode;
