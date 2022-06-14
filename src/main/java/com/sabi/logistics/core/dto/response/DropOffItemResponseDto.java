@@ -39,5 +39,6 @@ public class DropOffItemResponseDto {
     private BigDecimal outstandingAmount;
     private String transactionReference;
     private String deliveryAddress;
+    private String returnedStatus;
 
 }

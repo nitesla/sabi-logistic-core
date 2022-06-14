@@ -8,4 +8,5 @@ import java.util.List;
 public class DropOffItemUpdateRequestDto {
     private Long dropOffItemId;
     private Integer qty;
+    private String returnedStatus;
 }
