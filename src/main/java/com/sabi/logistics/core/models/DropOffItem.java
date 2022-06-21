@@ -32,9 +32,7 @@ public class DropOffItem extends CoreEntity {
     @Transient
     private String invoiceItemName;
     private int qty;
-    @Transient
     private String customerName;
-    @Transient
     private String customerPhone;
     @Transient
     private Long invoiceId;
