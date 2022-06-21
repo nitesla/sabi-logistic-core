@@ -1,6 +1,7 @@
 package com.sabi.logistics.core.dto.request;
 
 import com.sabi.logistics.core.enums.Party;
+import com.sabi.logistics.core.enums.PaymentConfirmationStatus;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -51,6 +52,9 @@ public class InvoiceRequestDto {
 
     @NotNull(message = "Payment status cannot be empty")
     private PaymentStatus paymentStatus;
+
+    @NotNull(message = "Payment Confirmation status cannot be empty")
+    private PaymentConfirmationStatus paymentConfirmationStatus;
 
     private Party sourceParty;
     private Party destinationParty;

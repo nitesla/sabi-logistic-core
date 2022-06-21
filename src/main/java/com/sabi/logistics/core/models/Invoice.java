@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 import com.sabi.framework.models.CoreEntity;
 import com.sabi.logistics.core.enums.Party;
+import com.sabi.logistics.core.enums.PaymentConfirmationStatus;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.*;
 
@@ -43,6 +44,8 @@ public class Invoice extends CoreEntity {
     private double tax;
     @Enumerated(EnumType.STRING)
     private PaymentStatus paymentStatus;
+    @Enumerated(EnumType.STRING)
+    private PaymentConfirmationStatus paymentConfirmationStatus;
     private Long thirdPartyOrderId;
     //private String orderNumber;
     private String invoiceNumber;

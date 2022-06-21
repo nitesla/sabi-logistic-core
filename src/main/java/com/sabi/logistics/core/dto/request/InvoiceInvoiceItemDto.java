@@ -1,6 +1,7 @@
 package com.sabi.logistics.core.dto.request;
 
 import com.sabi.logistics.core.enums.Party;
+import com.sabi.logistics.core.enums.PaymentConfirmationStatus;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.Data;
 
@@ -42,6 +43,8 @@ public class InvoiceInvoiceItemDto {
     private Double tax;
 
     private PaymentStatus paymentStatus;
+
+    private PaymentConfirmationStatus paymentConfirmationStatus;
 
     @NotBlank(message = "Invoice Number can not be empty")
     private String invoiceNumber;
