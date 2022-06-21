@@ -5,9 +5,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 import com.sabi.logistics.core.enums.Party;
+import com.sabi.logistics.core.enums.PaymentConfirmationStatus;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import com.sabi.logistics.core.models.InvoiceItem;
-import com.sabi.logistics.core.models.OrderItem;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -42,6 +42,7 @@ public class InvoiceResponseDto {
     private List<InvoiceItem> invoiceItems;
     private double tax;
     private PaymentStatus paymentStatus;
+    private PaymentConfirmationStatus paymentConfirmationStatus;
     //private String orderNumber;
     private String invoiceNumber;
     private Party sourceParty;
