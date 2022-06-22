@@ -62,4 +62,8 @@ public class DropOff extends CoreEntity {
 
     @Transient
     private List<DropOffItem> dropOffItem;
+    private String deliveryOverrideCodeHash;
+    private String paymentOverrideCodeHash;
+    private String creditCodeHash;
+
 }
