@@ -5,6 +5,7 @@ import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -16,6 +17,6 @@ public class SLANotifier extends CoreEntity {
     private Long slaId;
     private String name;
     private String email;
-    private long slaDuration;
-    private long triggerDuration;
+    @Transient
+    private SLA sla;
 }
