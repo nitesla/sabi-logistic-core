@@ -33,6 +33,7 @@ public class DropOffItem extends CoreEntity {
     private String invoiceItemName;
     private int qty;
     private String customerName;
+
     private String customerPhone;
     @Transient
     private Long invoiceId;
@@ -42,6 +43,7 @@ public class DropOffItem extends CoreEntity {
     private double tax;
     private String transactionReference;
     private String deliveryAddress;
+    private String returnedStatus;
     @Transient
     private Long dropOffInvoiceId;
 

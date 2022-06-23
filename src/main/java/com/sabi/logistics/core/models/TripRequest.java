@@ -68,6 +68,8 @@ public class TripRequest extends CoreEntity {
     private String driverAssistantName;
     @Transient
     private String driverAssistantPhone;
+    @Transient
+    private LocalDateTime currentSystemTime;
     /**
      Description: Includes 'partnerAssetTypeName' as transient field-non persistable
      Date:       19/04/2022
