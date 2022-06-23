@@ -22,4 +22,6 @@ public class PartnerSupplierResponse {
     private String phone;
     private String username;
     private Long partnerId;
+    private String code;
+    private String message;
 }
