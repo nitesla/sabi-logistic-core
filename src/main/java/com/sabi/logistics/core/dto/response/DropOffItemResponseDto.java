@@ -24,12 +24,12 @@ public class DropOffItemResponseDto {
     private String productName;
     private String status;
     private LocalDateTime deliveryDate;
-    private Long orderItemId;
-    private String orderItemName;
+    private Long invoiceItemId;
+    private String invoiceItemName;
     private Integer qty;
     private String customerName;
     private String customerPhone;
-    private Long orderId;
+    private Long invoiceId;
     private Long driverId;
     private String driverName;
     private Long driverAssistantId;
@@ -40,5 +40,6 @@ public class DropOffItemResponseDto {
     private String transactionReference;
     private String deliveryAddress;
     private String returnedStatus;
+    private Long dropOffInvoiceId;
 
 }

@@ -26,7 +26,7 @@ public class InventoryDto {
 
     private LocalDateTime acceptedDate;
 
-    private List<Long> orderItemId;
+    private List<Long> invoiceItemId;
 
 
 }

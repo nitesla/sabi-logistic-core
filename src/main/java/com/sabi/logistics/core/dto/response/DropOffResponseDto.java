@@ -3,6 +3,7 @@ package com.sabi.logistics.core.dto.response;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.sabi.logistics.core.enums.PaymentMode;
 import com.sabi.logistics.core.enums.PaymentStatus;
+import com.sabi.logistics.core.models.DropOffInvoice;
 import com.sabi.logistics.core.models.DropOffItem;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -26,7 +27,7 @@ public class DropOffResponseDto {
     private int qty;
     private int qtyReturned;
     private int qtyDelivered;
-    private long orderId;
+//    private long invoiceId;
     private String phoneNo;
     private String email;
     private String deliveryAddress;
@@ -38,6 +39,7 @@ public class DropOffResponseDto {
     private String driverRating;
     private String serviceRating;
     private List<DropOffItem> dropOffItem;
+    private List<DropOffInvoice> dropOffInvoice;
     private LocalDateTime deliveryDate;
     private String customerName;
     private String customerPhone;
