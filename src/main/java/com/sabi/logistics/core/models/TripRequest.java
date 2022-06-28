@@ -51,6 +51,7 @@ public class TripRequest extends CoreEntity {
 
     private LocalDateTime assignedDate;
     private LocalDateTime expiredTime;
+    private Long SLAId;
 
     @Transient
     private Long driverAssistantUserId;
