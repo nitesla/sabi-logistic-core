@@ -4,8 +4,7 @@ package com.sabi.logistics.core.models;
 import com.sabi.framework.models.CoreEntity;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -18,5 +17,5 @@ public class SLANotifier extends CoreEntity {
     private String name;
     private String email;
     @Transient
-    private SLA sla;
+    private String slaName;
 }
