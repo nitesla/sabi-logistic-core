@@ -21,8 +21,8 @@ public class TripRequest extends CoreEntity {
 
     private Long partnerId;
     private String referenceNo;
-    private String status;
-    private String driverStatus;
+    private String status = "pending";
+    private String driverStatus = "pending";
     private Long partnerAssetId;
     private String deliveryStatus;
     private BigDecimal earnings;
@@ -51,6 +51,7 @@ public class TripRequest extends CoreEntity {
 
     private LocalDateTime assignedDate;
     private LocalDateTime expiredTime;
+    private Long SLAId;
 
     @Transient
     private Long driverAssistantUserId;
