@@ -5,6 +5,7 @@ import com.sabi.logistics.core.enums.PaymentMode;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import com.sabi.logistics.core.models.DropOffInvoice;
 import com.sabi.logistics.core.models.DropOffItem;
+import com.sabi.logistics.core.models.InvoicePayment;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -39,6 +40,7 @@ public class DropOffResponseDto {
     private String driverRating;
     private String serviceRating;
     private List<DropOffItem> dropOffItem;
+    private List<InvoicePayment> invoicePayment;
     private List<DropOffInvoice> dropOffInvoice;
     private LocalDateTime deliveryDate;
     private String customerName;

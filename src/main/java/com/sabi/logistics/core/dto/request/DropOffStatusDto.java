@@ -23,4 +23,5 @@ public class DropOffStatusDto {
     private String returnStatus;
     private PaidStatus paidStatus;
     private List<DropOffItemRequestDto> dropOffItem;
+    private List<InvoicePaymentRequestDto> invoicePayment;
 }
