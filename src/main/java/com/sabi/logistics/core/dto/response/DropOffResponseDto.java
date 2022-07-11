@@ -1,7 +1,7 @@
 package com.sabi.logistics.core.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.sabi.logistics.core.enums.PaymentMode;
+import com.sabi.logistics.core.enums.PaymentChannel;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import com.sabi.logistics.core.models.DropOffInvoice;
 import com.sabi.logistics.core.models.DropOffItem;
@@ -51,6 +51,6 @@ public class DropOffResponseDto {
     private Boolean finalDropOff;
     private String returnStatus;
     private String paidStatus;
-    private PaymentMode paymentMode;
+    private PaymentChannel paymentChannel;
     private String paymentVerificationPicture;
 }

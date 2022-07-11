@@ -1,15 +1,10 @@
 package com.sabi.logistics.core.models;
 
 import com.sabi.framework.models.CoreEntity;
-import com.sabi.logistics.core.enums.PaymentChannel;
 import lombok.*;
 
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.Transient;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
 @Data

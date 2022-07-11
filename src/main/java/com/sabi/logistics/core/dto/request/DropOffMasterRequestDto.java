@@ -2,7 +2,7 @@ package com.sabi.logistics.core.dto.request;
 
 
 import com.sabi.logistics.core.enums.PaidStatus;
-import com.sabi.logistics.core.enums.PaymentMode;
+import com.sabi.logistics.core.enums.PaymentChannel;
 import com.sabi.logistics.core.enums.ReturnStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -41,7 +41,7 @@ public class DropOffMasterRequestDto {
     private Boolean finalDropOff;
     private ReturnStatus returnStatus;
     private PaidStatus paidStatus;
-    private PaymentMode paymentMode;
+    private PaymentChannel paymentChannel;
     private String paymentVerificationPicture;
 
     private List<DropOffItemRequestDto> dropOffItem;

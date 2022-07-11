@@ -2,7 +2,7 @@ package com.sabi.logistics.core.models;
 
 import com.sabi.framework.models.CoreEntity;
 import com.sabi.logistics.core.enums.PaidStatus;
-import com.sabi.logistics.core.enums.PaymentMode;
+import com.sabi.logistics.core.enums.PaymentChannel;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import com.sabi.logistics.core.enums.ReturnStatus;
 import lombok.*;
@@ -61,7 +61,7 @@ public class DropOff extends CoreEntity {
     @Enumerated(EnumType.STRING)
     private PaidStatus paidStatus;
     @Enumerated(EnumType.STRING)
-    private PaymentMode paymentMode;
+    private PaymentChannel paymentChannel;
     private String paymentVerificationPicture;
 
     @Transient
