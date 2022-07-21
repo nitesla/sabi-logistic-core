@@ -29,7 +29,7 @@ public class DropOff extends CoreEntity {
     private Long qty;
     private int qtyReturned;
     private int qtyDelivered;
-    private long invoiceId;
+//    private long invoiceId;
     private String phoneNo;
     private String email;
     private String deliveryAddress;
@@ -71,5 +71,8 @@ public class DropOff extends CoreEntity {
     private String deliveryOverrideCodeHash;
     private String paymentOverrideCodeHash;
     private String creditCodeHash;
+
+    @Transient
+    private List<DropOffInvoice> dropOffInvoice;
 
 }

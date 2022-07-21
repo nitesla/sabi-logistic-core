@@ -1,6 +1,7 @@
 package com.sabi.logistics.core.dto.request;
 
 
+import com.sabi.logistics.core.enums.PaymentChannel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,4 +20,5 @@ public class DropOffInvoiceRequestDto {
     private BigDecimal amount;
     private String status;
     private BigDecimal amountCollected;
+    private PaymentChannel paymentChannel;
 }
