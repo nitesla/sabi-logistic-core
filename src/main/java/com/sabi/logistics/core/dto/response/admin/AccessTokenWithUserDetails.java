@@ -48,5 +48,7 @@ public class AccessTokenWithUserDetails implements Serializable {
 
     private String authKeyExpirationDate;
 
+    private List<AdminPermission> permissions;
+
 }
 
