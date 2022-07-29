@@ -8,11 +8,9 @@ import com.sabi.logistics.core.enums.PaymentConfirmationStatus;
 import com.sabi.logistics.core.enums.PaymentStatus;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -49,6 +47,8 @@ public class Invoice extends CoreEntity {
     private Long thirdPartyOrderId;
     //private String orderNumber;
     private String invoiceNumber;
+    @Transient
+    private List<InvoiceItem> invoiceItems;
     
 
 }
